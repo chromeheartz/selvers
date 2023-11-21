@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script src="../assets/js/jquery-1.12.4.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <title>SELVERS</title>
+  </head>
+  <body>
+    <div id="wrap" class="page_main">
+      <!-- top_banner :: S -->
+      <div class="top_banner renewal">
+        <a href="../rate_plan/rate_plan.html">
+          <p class="txt1">연간결제 <strong>70%할인</strong> 이벤트</p>
+          <p class="txt2">네이버 스마트 스토어 제휴 프로모션</p>
+          <span class="tb_link">구독하기</span>
+        </a>
+        <button type="button" class="tb_close">닫기</button>
+      </div>
+      <!-- top_banner :: E -->
+
+      <!-- header :: S -->
+      <header id="header">
+        <div class="inner">
+            <button type="button" class="ham_btn only_mo">
+                <img src="../assets/images/btn/ham_btn.png" alt="" />
+            </button>
+            <div class="header_wrap">                    
+                <h1 class="logo">
+                    <a href="../main/main.html">
+                        <img src="../assets/images/common/logo.png" alt="selvers" class="only_web" />
+                        <img src="../assets/images/common/logo_mo.png" alt="selvers" class="only_mo" />
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <div class="gnb_in">
+                        <button type="button" class="close_btn only_mo">
+                            <img src="../assets/images/btn/ham_close_btn.png" alt="" />
+                        </button>
+                        <ul>
+                            <li>
+                                <!-- FIX RENEWAL: LINK 연결 필요 -->
+                                <a href="#" class="renewal_nav_feed_btn">
+                                    <i><img src="../assets/images/renewal/nav-feed-icon.png" alt="feed icon" /></i>
+                                    <span>피드</span>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- FIX RENEWAL: LINK 연결 필요 -->
+                                <a href="#" class="renewal_nav_home_btn">
+                                    <i><img src="../assets/images/renewal/nav-home-icon.png" alt="nav home icon" /></i>
+                                    <span>홈</span>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- FIX RENEWAL: LINK 연결 필요 -->
+                                <a href="#" class="renewal_nav_shop_btn">
+                                    <i><img src="../assets/images/renewal/nav-shop-icon.png" alt="nav shop icon" /></i>
+                                    <span>샵</span>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- FIX RENEWAL: LINK 연결 필요 -->
+                                <a href="#" class="renewal_nav_guide_btn">
+                                    <i><img src="../assets/images/renewal/nav-guide-icon.png"
+                                            alt="nav guide icon" /></i>
+                                    <span>가이드</span>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- FIX RENEWAL: LINK 연결 필요 -->
+                                <a href="#" class="renewal_nav_membership_btn">
+                                    <i><img src="../assets/images/renewal/nav-membership-icon.png"
+                                            alt="nav membership icon" /></i>
+                                    <span>멤버쉽</span>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- FIX RENEWAL: LINK 연결 필요 -->
+                                <a href="#" class="renewal_nav_search_btn">
+                                    <i><img src="../assets/images/renewal/nav-search-icon.png"
+                                            alt="nav search icon" /></i>
+                                    <span>검색</span>
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="member_util only_small_mo">
+                          <ul>
+                              <li>
+                                  <!-- FIX RENEWAL: LINK 연결 필요 -->
+                                  <a href="#" class="create_space_btn">
+                                      <i /></i>
+                                      <span>공간 만들기</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="../member/join.html" class="join_link">
+                                      <div class="txt_marquee">
+                                          <span>회원가입</span><span>회원가입</span><span>회원가입</span><span>회원가입</span>
+                                      </div>
+                                  </a>
+                              </li>
+                              <li><a href="../member/login.html" class="login_link">로그인</a></li>
+                          </ul>
+                      </div>
+                    </div>
+                    <div class="dim only_mo"></div>
+                </nav>
+
+                <div class="member_util">
+                    <ul>
+                        <li>
+                            <!-- FIX RENEWAL: LINK 연결 필요 -->
+                            <a href="#" class="create_space_btn">
+                                <i /></i>
+                                <span>공간 만들기</span>
+                            </a>
+                        </li>
+                        <li><a href="../member/login.html" class="login_link">로그인</a></li>
+                        <li>
+                            <a href="../member/join.html" class="join_link">
+                                <div class="txt_marquee">
+                                    <span>회원가입</span><span>회원가입</span><span>회원가입</span><span>회원가입</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+      </header>
+      <!-- header :: E -->
+
+      <div id="container" class="header_in">
+        <!-- renewal_search section :: S -->
+        <section class="renewal_search my50">
+          <div class="inner">
+            <form class="search_wrap">
+              <input type="text" placeholder="검색어를 입력하세요" class="search_input">
+              <button type="submit" class="search_button"></i>
+            </form>
+          </div>
+        </section>
+        <!-- renewal_search section :: E -->
+
+        <!-- card section :: S -->
+        <section class="renewal_card_section pb100">
+          <div class="inner">
+            <div class="renewal_card_wrapper">
+              <h6 class="title">인기공간</h6>
+              <ul class="renewal_card_list">
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <i>
+                    <img
+                      src="../assets/images/renewal/dummy-card-img.png"
+                      alt="dummy img"
+                    />
+                    <span>제목 영역</span>
+                  </i>
+                  <div class="btn_wrap">
+                    <div class="card_view">
+                      <i></i>
+                      <span>1.5K</span>
+                    </div>
+                    <div class="card_heart">
+                      <i></i>
+                      <span>12</span>
+                    </div>
+                    <div class="card_comment">
+                      <i></i>
+                      <span>5</span>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+              <div class="renewal_viewmore_wrap mt50">
+                <button>더보기</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- card section :: E -->
+      </div>
+
+<!-- pop_inquiry -->
+<div class="pop_wrap pop_inquiry">
+  <div class="dim"></div>
+  <div class="pop_box">
+      <div class="pop_head">
+          <h2 class="pop_ttl">문의하기</h2>
+          <button type="button" class="pop_close">닫기</button>
+      </div>
+      <div class="pop_body">
+          <div class="pop_body_in">
+              <div class="input_row">
+                  <strong class="label">이메일</strong>
+                  <div class="input_box">
+                      <input type="text" name="" id="" placeholder="이메일" class="ess_input">
+                  </div>
+              </div>
+              <div class="input_row">
+                  <strong class="label">문의유형</strong>
+                  <div class="input_box">
+                      <select name="" id="">
+                          <option value="">구독문의</option>
+                          <option value="">회원가입</option>
+                          <option value="">주문.결제</option>
+                          <option value="">이용문의</option>
+                          <option value="">광고문의</option>
+                          <option value="">기타</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="input_row">
+                  <strong class="label">문의내용</strong>
+                  <div class="input_box">
+                      <textarea name="" id="" placeholder="무엇을 도와드릴까요?" class="ess_input"></textarea>
+                  </div>
+              </div>
+              
+              <div class="btn_row">
+                  <button type="button" class="btn cancel">취소</button>
+                  <button type="button" disabled class="btn ok">신청하기</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- pop_inquiry_submit -->
+<div class="pop_wrap pop_inquiry_submit">
+  <div class="dim"></div>
+  <div class="pop_box">
+      <div class="pop_body">
+          <div class="pop_body_in">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="pop_cont">
+                  <h2 class="ttl">접수되었습니다.</h2>
+                  <p class="desc">소중한 의견으로 더 나은 서비스를 <br class="only_mo">만들겠습니다.</p>
+              </div>
+              <div class="btn_row">
+                  <button type="button" class="btn ok">확인</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- footer :: S -->
+<footer id="footer">
+  <div class="foot_menu">
+      <div class="inner">
+          <ul>
+
+              <li><a href="https://www.selvers.com/" target="_blank">회사소개</a></li>
+              <li><a href="../policy/service.html">이용약관</a></li>
+              <li><a href="../policy/privacy.html"><strong>개인정보처리방침</strong></a></li>
+              <li><a href="../policy/financial.html">전자금융거래 이용약관</a></li>
+              <li class="btn_inquiry_open">문의하기버튼클릭</li>
+          </ul>
+      </div>
+  </div>
+  <div class="foot_info">
+      <div class="inner">
+          <div class="info_row">
+              <div class="company">
+                  <h2>company info</h2>
+                  <address class="info_cont">
+                      <dl>
+                          <dt>기업명</dt>
+                          <dd>(주)셀버스</dd>
+                      </dl>
+                      <dl>
+                          <dt>대표</dt>
+                          <dd>김기동</dd>
+                      </dl>
+                      <dl>
+                          <dt>사업자등록번호</dt>
+                          <dd>807-81-00491</dd>
+                      </dl>
+                      <dl>
+                          <dt>통신판매업신고번호</dt>
+                          <dd>제2018-서울중구-0199호</dd>
+                      </dl>
+                      <dl>
+                          <dt>주소</dt>
+                          <dd>서울특별시 중구 동호로10길 8-21, 4층</dd>
+                      </dl>
+                  </address>
+              </div>
+              <div class="customer">
+                  <h2>customer</h2>
+                  <div class="info_cont">
+                      <dl>
+                          <dt>대표번호</dt>
+                          <dd>02-2278-1279</dd>
+                      </dl>
+                      <dl>
+                          <dt>이메일</dt>
+                          <dd>help@selvers.com </dd>
+                      </dl>
+                      <p class="time">평일 09:00 ~ 18:00 (점심 12:00~13:00) 주말, 공휴일 제외</p>
+                  </div>
+              </div>
+          </div>
+          <p class="copy">Copyright ⓒ 2023 Selvers Inc. All rights reserved.</p>
+          <div class="foot_logo">
+              <a href="/">
+                  <img src="../assets/images/common/foot_logo.png" alt="selvers" class="only_web">
+                  <img src="../assets/images/common/foot_logo_mo.png" alt="selvers" class="only_mo">
+              </a>
+          </div>
+      </div>
+      
+  </div>
+</footer>
+<!-- footer :: E -->
+    </div>
+  </body>
+</html>

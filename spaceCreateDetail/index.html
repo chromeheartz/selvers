@@ -1,0 +1,2572 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.css" />
+    <script src="../assets/js/jquery-1.12.4.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@jaames/iro@5"></script>
+
+    <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <title>SELVERS</title>
+  </head>
+  <body>
+    <div id="wrap" class="page_main">
+      <div id="createDetailContainer">
+        <!-- S: MENU -->
+        <div class="icon_exit_wrap">
+          <button type="button">다음</button>
+          <i
+            ><img
+              src="../assets/images/renewal/renewal-create-detail-exit-icon.png"
+              alt="hambuger icon"
+          /></i>
+        </div>
+
+        <div class="icon_cube_adjust_wrap">
+          <i
+            ><img
+              src="../assets/images/renewal/renewal-create-detail-cube-icon.png"
+              alt="hambuger icon"
+          /></i>
+        </div>
+
+        <div class="music_wrap">
+          <i class="vol"></i>
+          <!-- <i class="mute"></i> -->
+          <p>노래제목 - 가수</p>
+        </div>
+
+        <div class="icon_object_wrap">
+          <i
+            ><img
+              src="../assets/images/renewal/renewal-create-detail-object-icon.png"
+              alt="hambuger icon"
+          /></i>
+        </div>
+
+        <div class="menu_title_wrap">
+          <div class="menu_title">
+            <i
+              ><img
+                src="../assets/images/renewal/renewal-cube-title-icon.png"
+                alt="cube title icon"
+            /></i>
+            <p>큐브 생성 및 이동</p>
+          </div>
+          <div class="btn_wrap">
+            <button type="button" class="edit_btn on">수정</button>
+            <button type="button" class="remove_btn">제거</button>
+            <button
+              type="button"
+              class="type_change_btn"
+              id="type_change_modal_call"
+            >
+              타입변경
+            </button>
+            <button type="button" class="move_btn">이동</button>
+          </div>
+        </div>
+
+        <!-- E: MENU -->
+
+        <div class="space_create_detail_wrap">
+          <div class="cube_adjust_wrap">
+            <div class="close_adjust_bar"></div>
+
+            <ul class="cube_adjust_list">
+              <li class="cube">
+                <div class="dep1">
+                  <i></i>
+                  <span>큐브 조정</span>
+                </div>
+                <div class="dep2 cube_menu">
+                  <ul class="dep2_list">
+                    <li>
+                      <div class="range dep2_menu">
+                        <div class="dep2_flex_wrap">
+                          <i></i>
+                          <span>높이</span>
+                        </div>
+                        <div class="cube_range_container">
+                          <span class="bar"><span class="fill"></span></span>
+                          <input
+                            id="cube_range_slider"
+                            class="cube_range_slider"
+                            type="range"
+                            min="0"
+                            max="100"
+                            value="50"
+                          />
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="image dep2_menu">
+                        <div class="dep2_flex_wrap">
+                          <i></i>
+                          <span>이미지 변경</span>
+                        </div>
+                      </div>
+                      <div class="dep3">
+                        <ul class="image_change_list">
+                          <li id="image_change_modal_call">
+                            <i></i>
+                            <span>천장</span>
+                          </li>
+                          <li>
+                            <i></i>
+                            <span>벽면</span>
+                          </li>
+                          <li>
+                            <i></i>
+                            <span>바닥</span>
+                          </li>
+                          <li>
+                            <i></i>
+                            <span>배경</span>
+                          </li>
+                          <li>
+                            <i></i>
+                            <span>배경 이벤트</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+
+              <li class="interactive">
+                <div class="dep1">
+                  <i></i>
+                  <span>인터랙티브</span>
+                </div>
+                <div class="dep2 cube_menu">
+                  <ul class="dep2_list">
+                    <li>
+                      <ul class="interactive_list_wrap">
+                        <li id="interactive_image_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/interactive-image-icon.png"
+                              alt="interactive icon"
+                          /></i>
+                          <span>사진</span>
+                        </li>
+                        <li id="interactive_video_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/interactive-video-icon.png"
+                              alt="interactive icon"
+                          /></i>
+                          <span>영상</span>
+                        </li>
+                        <li id="interactive_music_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/interactive-music-icon.png"
+                              alt="interactive icon"
+                          /></i>
+                          <span>음악</span>
+                        </li>
+                        <li id="interactive_sticker_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/interactive-sticker-icon.png"
+                              alt="interactive icon"
+                          /></i>
+                          <span>스티커</span>
+                        </li>
+                        <li id="interactive_link_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/interactive-link-icon.png"
+                              alt="interactive icon"
+                          /></i>
+                          <span>링크</span>
+                        </li>
+                        <li id="interactive_embede_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/interactive-embede-icon.png"
+                              alt="interactive icon"
+                          /></i>
+                          <span>임베드</span>
+                        </li>
+                        <li id="interactive_exhibition_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/interactive-exhibition-icon.png"
+                              alt="interactive icon"
+                          /></i>
+                          <span>전시</span>
+                        </li>
+                        <li id="interactive_space_link_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/interactive-space-link-icon.png"
+                              alt="interactive icon"
+                          /></i>
+                          <span>공간연결</span>
+                        </li>
+                        <li id="interactive_space_move_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/interactive-space-move-icon.png"
+                              alt="interactive icon"
+                          /></i>
+                          <span>공간이동</span>
+                        </li>
+                        <li id="interactive_tts_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/interactive-tts-icon.png"
+                              alt="interactive icon"
+                          /></i>
+                          <span>TTS</span>
+                        </li>
+                        <li id="interactive_text_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/interactive-text-icon.png"
+                              alt="interactive icon"
+                          /></i>
+                          <span>텍스트</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="object">
+                <div class="dep1">
+                  <i></i>
+                  <span>오브젝트</span>
+                </div>
+                <div class="dep2 cube_menu">
+                  <ul class="dep2_list">
+                    <li>
+                      <ul class="objects_list_wrap">
+                        <li id="objects_light_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/objects-light-icon.png"
+                              alt="objects icon"
+                          /></i>
+                          <span>공간조명</span>
+                        </li>
+                        <li id="objects_wall_light_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/objects-wall-light-icon.png"
+                              alt="objects icon"
+                          /></i>
+                          <span>벽면조명</span>
+                        </li>
+                        <li id="objects_threed_text_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/objects-3dtext-icon.png"
+                              alt="objects icon"
+                          /></i>
+                          <span>3D 텍스트</span>
+                        </li>
+                        <li id="objects_threed_thing_modal_call">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/objects-3dthing-icon.png"
+                              alt="objects icon"
+                          /></i>
+                          <span>3D 물체</span>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+
+            <div class="btn_wrap">
+              <button id="temp_save_toast_call">임시저장</button>
+              <button class="load_btn" id="load_modal_call">불러오기</button>
+            </div>
+          </div>
+
+          <div class="object_list_wrap">
+            <div class="close_object_bar"></div>
+
+            <div class="title">
+              <i
+                ><img
+                  src="../assets/images/renewal/object-list-icon.png"
+                  alt="오브젝트 목록 아이콘"
+              /></i>
+              <p>오브젝트 목록</p>
+            </div>
+
+            <ul class="object_create_remove_list">
+              <li>
+                <span>조명1</span>
+                <div class="btn_wrap">
+                  <button class="create_object">생성</button>
+                  <button class="remove_object">제거</button>
+                </div>
+              </li>
+              <li>
+                <span>물체1</span>
+                <div class="btn_wrap">
+                  <button class="create_object">생성</button>
+                  <button class="remove_object">제거</button>
+                </div>
+              </li>
+              <li>
+                <span>물체2</span>
+                <div class="btn_wrap">
+                  <button class="create_object">생성</button>
+                  <button class="remove_object">제거</button>
+                </div>
+              </li>
+              <li>
+                <span>물체3</span>
+                <div class="btn_wrap">
+                  <button class="create_object">생성</button>
+                  <button class="remove_object">제거</button>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ***************** S: 천장 모달 ***************** -->
+    <div class="pop_wrap space_create_modal image_change_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">천장</div>
+              <ul class="col-5-list-wrap">
+                <li class="on"><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li class="load_image_wrap">
+                  <img
+                    src="../assets/images/renewal/load-image-icon.png"
+                    alt="load image icon"
+                  />
+                  <span>이미지 불러오기</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 천장 모달 ***************** -->
+
+    <!-- ***************** S: 타입변경 모달 ***************** -->
+    <div class="pop_wrap space_create_modal type_change_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">타입변경</div>
+              <ul class="col-5-list-wrap">
+                <li class="on"><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li class="load_image_wrap">
+                  <img
+                    src="../assets/images/renewal/load-image-icon.png"
+                    alt="load image icon"
+                  />
+                  <span>이미지 불러오기</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 타입변경 모달 ***************** -->
+
+    <!-- ***************** S: 인터랙티브 사진 모달 ***************** -->
+    <div class="pop_wrap space_create_modal interactive_image_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">이미지 선택</div>
+              <ul class="col-5-list-wrap image_custom_wrap">
+                <li class="load_image_wrap">
+                  <img
+                    src="../assets/images/renewal/load-image-icon.png"
+                    alt="load image icon"
+                  />
+                  <span>이미지 불러오기</span>
+                </li>
+              </ul>
+              <div class="btn_wrap">
+                <button class="on">색상</button>
+                <button>배경</button>
+                <button>재질</button>
+                <button>패턴</button>
+                <button>사진</button>
+              </div>
+              <ul class="col-5-list-wrap">
+                <li class="on"><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 인터랙티브 사진 모달 ***************** -->
+
+    <!-- ***************** S: 인터랙티브 영상 모달 ***************** -->
+    <div class="pop_wrap space_create_modal interactive_video_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">영상 선택</div>
+              <div class="video_preview_wrap">
+                <i
+                  ><img
+                    src="../assets/images/renewal/video-bg-icon.png"
+                    alt="video preview icon"
+                /></i>
+                <span>Preview</span>
+              </div>
+              <div class="video_search_wrap">
+                <i class="search_icon"></i>
+                <input type="text" placeholder="YouTube 검색" />
+              </div>
+              <ul class="video-col-4-list">
+                <li class="on">
+                  <i></i>
+                  <span>영상 제목 영역입니다.</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>영상 제목 영역입니다.</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>영상 제목 영역입니다.</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>영상 제목 영역입니다.</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>영상 제목 영역입니다.</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>영상 제목 영역입니다.</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>영상 제목 영역입니다.</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>영상 제목 영역입니다.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 인터랙티브 영상 모달 ***************** -->
+
+    <!-- ***************** S: 인터랙티브 음악 모달 ***************** -->
+    <div class="pop_wrap space_create_modal interactive_music_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">BGM 선택</div>
+              <ul class="tab_btn_wrap">
+                <li class="tab_btn on"><a href="#recommend_tab">추천</a></li>
+                <li class="tab_btn"><a href="#search_tab">BGM 검색</a></li>
+                <li class="tab_btn"><a href="#like_tab">즐겨찾기</a></li>
+              </ul>
+              <div class="tab_container">
+                <div id="recommend_tab" class="on">
+                  <div class="recommend_dropdown_wrap">
+                    <div class="dropdown_btn">
+                      <span>인기순</span>
+                      <i></i>
+                    </div>
+
+                    <ul class="dropdown_container">
+                      <li>인기순</li>
+                      <li>최신순</li>
+                    </ul>
+                  </div>
+
+                  <ul class="music_contents_wrap">
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div id="search_tab">
+                  <div class="music_search_wrap">
+                    <i class="search_icon"></i>
+                    <input
+                      type="text"
+                      placeholder="곡명 / 아티스트 키워드로 검색해보세요"
+                      id="music_search_input"
+                    />
+                    <i class="init_icon"></i>
+                  </div>
+
+                  <p class="search_result_msg">검색결과</p>
+
+                  <ul class="music_contents_wrap">
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역01</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div id="like_tab">
+                  <ul class="music_contents_wrap">
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역02</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="info_wrap">
+                        <i
+                          ><img
+                            src="../assets/images/renewal/music-big-icon.png"
+                            alt="music default icon"
+                        /></i>
+                        <div class="text_wrap">
+                          <p>노래 타이틀 영역</p>
+                          <div class="music_info">
+                            <span>SellbyMusic</span>
+                            <span>0:15</span>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tag">
+                        <i></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="music_complete_wrap">
+                <div class="music_wrap">
+                  <i class="music"></i>
+                  <p>노래제목 - 가수</p>
+                </div>
+                <div class="btn_wrap">
+                  <button>선택안함</button>
+                  <button class="save">확인</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 인터랙티브 음악 모달 ***************** -->
+
+    <!-- ***************** S: 인터랙티브 스티커 모달 ***************** -->
+    <div class="pop_wrap space_create_modal interactive_sticker_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">스티커 선택</div>
+              <div class="btn_wrap">
+                <button class="on">동식물</button>
+                <button>날씨</button>
+                <button>이모티콘</button>
+                <button>효과&기타</button>
+                <button>텍스트</button>
+                <button>기호&도형</button>
+                <button>블러</button>
+                <button>입크</button>
+                <button>여름</button>
+              </div>
+              <div class="sticker_list_wrapper">
+                <ul class="col-5-list-wrap">
+                  <li class="on"><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 인터랙티브 스티커 모달 ***************** -->
+
+    <!-- ***************** S: 인터랙티브 링크 모달 ***************** -->
+    <div class="pop_wrap space_create_modal interactive_link_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">링크 연결하기</div>
+              <div class="input_wrap">
+                <input type="text" placeholder="제목" />
+                <input type="text" placeholder="링크주소 (http://www.)" />
+              </div>
+              <div class="btn_wrap">
+                <button>추가</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 인터랙티브 링크 모달 ***************** -->
+
+    <!-- ***************** S: 인터랙티브 임베드 모달 ***************** -->
+    <div class="pop_wrap space_create_modal interactive_embede_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">임베드 선택</div>
+              <div class="embede_dropdown_wrap">
+                <div class="embede_dropdown_select">
+                  <div class="info_wrap">
+                    <i
+                      ><img
+                        src="../assets/images/renewal/embede-insta-icon.png"
+                        alt="embe icon"
+                    /></i>
+                    <div class="text_wrap">
+                      <p>Instagram</p>
+                      <span>Instagram 게시물을 공유</span>
+                    </div>
+                  </div>
+                  <div class="arrow">
+                    <i></i>
+                  </div>
+                </div>
+                <div class="embede_dropdown_list">
+                  <p>소셜</p>
+                  <ul>
+                    <li>
+                      <i
+                        ><img
+                          src="../assets/images/renewal/embede-insta-icon.png"
+                          alt="embe icon"
+                      /></i>
+                      <div class="text_wrap">
+                        <p>Instagram</p>
+                        <span>Instagram 게시물을 공유</span>
+                      </div>
+                    </li>
+                    <li>
+                      <i
+                        ><img
+                          src="../assets/images/renewal/embede-meta-icon.png"
+                          alt="embe icon"
+                      /></i>
+                      <div class="text_wrap">
+                        <p>Facebook</p>
+                        <span>Facebook 게시물을 공유</span>
+                      </div>
+                    </li>
+                    <li>
+                      <i
+                        ><img
+                          src="../assets/images/renewal/embede-blog-icon.png"
+                          alt="embe icon"
+                      /></i>
+                      <div class="text_wrap">
+                        <p>Naver Blog</p>
+                        <span>네이버 블로그 게시물을 공유</span>
+                      </div>
+                    </li>
+                  </ul>
+                  <p>화이트보드</p>
+                  <ul>
+                    <li>
+                      <i
+                        ><img
+                          src="../assets/images/renewal/embede-draw-icon.png"
+                          alt="embe icon"
+                      /></i>
+                      <div class="text_wrap">
+                        <p>Excalidraw</p>
+                        <span>손그림 감성의 온라인 화이트보드 공유</span>
+                      </div>
+                    </li>
+                    <li>
+                      <i
+                        ><img
+                          src="../assets/images/renewal/embede-padlet-icon.png"
+                          alt="embe icon"
+                      /></i>
+                      <div class="text_wrap">
+                        <p>Padlet</p>
+                        <span>가상 게시판에 컨텐츠를 업로드, 구성 및 공유</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="embede_body_wrap">
+                <div class="embede_search_wrap">
+                  <input type="text" placeholder="URL을 입력하세요" />
+                </div>
+                <div class="embede_thumb_wrap">
+                  <span>섬네일 이미지(선택사항)</span>
+                  <ul>
+                    <li class="thumb_add">
+                      <i
+                        ><img
+                          src="../assets/images/renewal/embede-thumb-icon.png"
+                          alt="add icon"
+                      /></i>
+                    </li>
+                  </ul>
+                  <p>
+                    사용자가 임의로 삽입한 이미지, 영상소스가 저작권법에
+                    위배되어 <br />
+                    법적 문제가 발생할 경우 저작권 문제에 대한 책임은 전적으로
+                    사용자에게 있습니다.
+                  </p>
+                </div>
+              </div>
+              <div class="btn_wrap">
+                <button>추가</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 인터랙티브 임베드 모달 ***************** -->
+
+    <!-- ***************** S: 인터랙티브 전시 모달 ***************** -->
+    <div class="pop_wrap space_create_modal interactive_exhibition_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">전시 정보 입력</div>
+              <div class="exhibition_image_wrap">
+                <i
+                  ><img
+                    src="../assets/images/renewal/exhibition-image-icon.png"
+                    alt="exhibition image icon"
+                /></i>
+                <p>이미지를 선택하세요</p>
+                <span>(오른쪽 서브 이미지는 선택사항)</span>
+              </div>
+              <div class="exhibition_body_wrap">
+                <div class="input_wrap">
+                  <input
+                    type="text"
+                    id="exhibition_title"
+                    class="exhibition_text_input"
+                    placeholder="제목을 입력하세요.(30자 이내)"
+                    maxlength="30"
+                  />
+                  <div class="count_wrap">
+                    <span class="count">0</span>
+                    /
+                    <span>30</span>
+                  </div>
+                </div>
+                <textarea placeholder="텍스트를 입력하세요."></textarea>
+                <div class="input_wrap url">
+                  <label for="long_text_checkbox">
+                    <input type="checkbox" id="long_text_checkbox" />장문
+                  </label>
+                  <input
+                    type="text"
+                    id="exhibition_url"
+                    class="exhibition_text_input"
+                    placeholder="URL을 입력하세요."
+                  />
+                </div>
+              </div>
+              <div class="btn_wrap">
+                <button>추가</button>
+              </div>
+              <div class="sub_image_alert">
+                <div class="sub_image_alert_wrap">
+                  <ul class="image_wrap">
+                    <li>
+                      <i></i>
+                    </li>
+                    <li>
+                      <i></i>
+                    </li>
+                    <li>
+                      <i></i>
+                    </li>
+                    <li>
+                      <i></i>
+                    </li>
+                    <li>
+                      <i></i>
+                    </li>
+                    <li>
+                      <i></i>
+                    </li>
+                    <li>
+                      <i></i>
+                    </li>
+                    <li>
+                      <i></i>
+                    </li>
+                    <li>
+                      <i></i>
+                    </li>
+                  </ul>
+                  <div class="add_wrap">
+                    <i
+                      ><img
+                        src="../assets/images/renewal/exhibition-add-icon.png"
+                        alt="add icon"
+                    /></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 인터랙티브 전시 모달 ***************** -->
+
+    <!-- ***************** S: 인터랙티브 공간연결 모달 ***************** -->
+    <div class="pop_wrap space_create_modal interactive_space_link_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">공간 연결 선택</div>
+              <ul class="tab_btn_wrap">
+                <li class="tab_btn on">
+                  <a href="#space_link_myspace">내공간</a>
+                </li>
+                <li class="tab_btn"><a href="#space_link_search">검색</a></li>
+              </ul>
+              <div class="tab_container">
+                <div id="space_link_myspace" class="on">
+                  <ul class="space-link-col-5-list">
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                  </ul>
+                </div>
+                <div id="space_link_search">
+                  <div class="space_link_search_wrapper">
+                    <div class="space_link_search_wrap">
+                      <i class="search_icon"></i>
+                      <input
+                        type="text"
+                        placeholder="검색어를 입력해주세요."
+                        id="space_link_search_input"
+                      />
+                      <i class="init_icon"></i>
+                    </div>
+                    <i></i>
+                  </div>
+                  <ul class="space-link-col-5-list">
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                    <li>
+                      <i></i>
+                      <p>제목 영역</p>
+                    </li>
+                  </ul>
+                  <div class="space_link_filter_alert">
+                    <div class="filter_pop_close">
+                      <i
+                        ><img
+                          src="../assets/images/renewal/filter-pop-close.png"
+                          alt="pop close icon"
+                      /></i>
+                    </div>
+                    <p>필터</p>
+                    <ul class="filter_list_wrap">
+                      <li class="follower on">팔로워</li>
+                      <li class="following">팔로잉</li>
+                    </ul>
+                    <button class="save">적용</button>
+                  </div>
+                </div>
+              </div>
+              <div class="btn_wrap">
+                <button>미리보기</button>
+                <button class="point">바로 연결하기</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 인터랙티브 공간연결 모달 ***************** -->
+
+    <!-- ***************** S: 나의 공간 모달 ***************** -->
+    <div class="pop_wrap space_create_modal" id="myspace_alert">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="user_wrap">
+                <i
+                  ><img
+                    src="../assets/images/renewal/myspace_alert_user_icon.png"
+                    alt="use-icon"
+                /></i>
+                <span>Selvers 셀버스</span>
+              </div>
+              <div class="img_wrap">
+                <img
+                  src="../assets/images/renewal/myspace_alert_img.png"
+                  alt="my space"
+                />
+              </div>
+              <div class="btn_wrap">
+                <button>공간 연결</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 나의 공간 모달 ***************** -->
+
+    <!-- ***************** S: 공간이동 모달 ***************** -->
+    <div class="pop_wrap space_create_modal interactive_move_change_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">공간 이동</div>
+              <ul class="col-5-list-wrap image_custom_wrap">
+                <li class="load_image_wrap">
+                  <img
+                    src="../assets/images/renewal/load-image-icon.png"
+                    alt="load image icon"
+                  />
+                  <span>이미지 불러오기</span>
+                </li>
+              </ul>
+              <ul class="col-5-list-wrap">
+                <li class="on"><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 공간이동 모달 ***************** -->
+
+    <!-- ***************** S: tts 링크 모달 ***************** -->
+    <div class="pop_wrap space_create_modal interactive_tts_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">TTS 입력</div>
+              <span class="sub_title">기본 언어는 한국어만 지원됩니다</span>
+              <div class="textarea_wrap">
+                <textarea
+                  id="tts_textarea"
+                  placeholder="내용을 입력하세요. (2000자 이내)"
+                  maxlength="2000"
+                ></textarea>
+                <div class="count_wrap">
+                  <span class="count">0</span>
+                  /
+                  <span>2000</span>
+                </div>
+              </div>
+              <div class="flex_wrap">
+                <p>스크립트 표시</p>
+                <label>
+                  <input role="switch" type="checkbox" />
+                </label>
+              </div>
+              <div class="flex_wrap">
+                <p>미리듣기</p>
+                <i
+                  ><img
+                    src="../assets/images/renewal/tts-vol-icon.png"
+                    alt="volume icon"
+                /></i>
+              </div>
+              <div class="btn_wrap">
+                <button>추가</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: tts 링크 모달 ***************** -->
+
+    <!-- ***************** S: 텍스트 모달 ***************** -->
+    <div class="pop_wrap space_create_modal interactive_text_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">텍스트 입력</div>
+              <input
+                type="text"
+                placeholder="입력해주세요."
+                class="interactive_text_input"
+              />
+              <div class="interactive_text_contents_wrap">
+                <div class="text_weight_wrpper">
+                  <p>글자 두께</p>
+                  <ul class="text_weight_wrap">
+                    <li class="light">가a</li>
+                    <li class="regular">가a</li>
+                    <li class="medium">가a</li>
+                    <li class="bold">가a</li>
+                  </ul>
+                </div>
+                <div class="color_picker_wrap">
+                  <p>색상</p>
+                  <div class="text_colorPicker"></div>
+                </div>
+              </div>
+              <div class="btn_wrap">
+                <button>추가</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 텍스트 모달 ***************** -->
+
+    <!-- ***************** S: 오브젝트 3D 물체 모달 ***************** -->
+    <div class="pop_wrap space_create_modal objects_threed_thing_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">3D 물체</div>
+              <ul class="col-5-list-wrap">
+                <li class="on"><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li class="load_image_wrap">
+                  <img
+                    src="../assets/images/renewal/load-image-icon.png"
+                    alt="load image icon"
+                  />
+                  <span>이미지 불러오기</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 오브젝트 3D 물체 모달 ***************** -->
+
+    <!-- ***************** S: 공간조명 모달 ***************** -->
+    <div class="pop_wrap space_create_modal objects_light_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">공간조명</div>
+              <div class="objects_light_head_wrap">
+                <div class="thumb_wrap">
+                  <i> 2-1공간조명섬네일 </i>
+                </div>
+                <div class="light_color_wrap">
+                  <div class="input_range_wrap">
+                    <p>밝기</p>
+                    <div class="light_range_container">
+                      <span class="bar"><span class="fill"></span></span>
+                      <input
+                        id="light_range_slider"
+                        class="light_range_slider"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="50"
+                      />
+                    </div>
+                  </div>
+                  <div class="color_picker_wrap">
+                    <p>색상</p>
+                    <div class="objects_light_colorPicker"></div>
+                  </div>
+                  <p>공간 및 벽면 조명의 적용은 10개까지 가능합니다.</p>
+                </div>
+              </div>
+              <div class="threed_list_wrap">
+                <p>3D 조명 물체 (선택)</p>
+                <ul>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                </ul>
+              </div>
+              <div class="btn_wrap">
+                <button>추가</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 공간조명 모달 ***************** -->
+
+    <!-- ***************** S: 벽면조명 모달 ***************** -->
+    <div class="pop_wrap space_create_modal objects_wall_light_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">벽면조명</div>
+              <div class="objects_wall_light_head_wrap">
+                <div class="thumb_wrap">
+                  <i> 2-1벽면조명섬네일 </i>
+                </div>
+                <div class="light_color_wrap">
+                  <div class="input_range_wrap">
+                    <p>밝기</p>
+                    <div class="wall_light_range_container">
+                      <span class="bar"><span class="fill"></span></span>
+                      <input
+                        id="wall_light_range_slider"
+                        class="wall_light_range_slider"
+                        type="range"
+                        min="0"
+                        max="100"
+                        value="50"
+                      />
+                    </div>
+                  </div>
+                  <div class="color_picker_wrap">
+                    <p>색상</p>
+                    <div class="objects_wall_light_colorPicker"></div>
+                  </div>
+                  <p>공간 및 벽면 조명의 적용은 10개까지 가능합니다.</p>
+                </div>
+              </div>
+              <div class="threed_list_wrap">
+                <p>3D 조명 물체 (선택)</p>
+                <ul>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                  <li><i></i></li>
+                </ul>
+              </div>
+              <div class="btn_wrap">
+                <button>추가</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 벽면조명 모달 ***************** -->
+
+    <!-- ***************** S: 3D 텍스트 모달 ***************** -->
+    <div class="pop_wrap space_create_modal objects_threed_text_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">3D 텍스트</div>
+              <input
+                type="text"
+                placeholder="입력해주세요."
+                class="objects_text_input"
+              />
+              <div class="size_range_wrap">
+                <p>사이즈</p>
+                <div class="range_wrap">
+                  <div class="size_range_container">
+                    <span class="bar"><span class="fill"></span></span>
+                    <input
+                      id="size_range_slider"
+                      class="size_range_slider"
+                      type="range"
+                      min="0"
+                      max="100"
+                      value="50"
+                    />
+                  </div>
+                  <span class="size_count">50</span>
+                </div>
+              </div>
+              <div class="interactive_text_contents_wrap">
+                <div class="text_weight_wrpper">
+                  <p>글자 두께</p>
+                  <ul class="text_weight_wrap">
+                    <li class="light">가a</li>
+                    <li class="regular">가a</li>
+                    <li class="medium">가a</li>
+                    <li class="bold">가a</li>
+                  </ul>
+                </div>
+                <div class="color_picker_wrap">
+                  <p>색상</p>
+                  <div class="threed_text_colorPicker"></div>
+                </div>
+              </div>
+              <div class="btn_wrap">
+                <button>추가</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 3D 텍스트 모달 ***************** -->
+
+    <!-- ***************** S: 불러오기 물체 모달 ***************** -->
+    <div class="pop_wrap space_create_modal load_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">불러오기</div>
+              <ul class="col-3-list-wrap">
+                <li class="on">
+                  <i></i>
+                  <span>2023.09.27 13:11:13</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>2023.09.27 13:11:13</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>2023.09.27 13:11:13</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>2023.09.27 13:11:13</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>2023.09.27 13:11:13</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>2023.09.27 13:11:13</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>2023.09.27 13:11:13</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>2023.09.27 13:11:13</span>
+                </li>
+                <li>
+                  <i></i>
+                  <span>2023.09.27 13:11:13</span>
+                </li>
+              </ul>
+              <div class="load_alert">
+                <p>현재 만들던 큐브 공간을 저장하시겠습니까?</p>
+                <div class="btn_wrap">
+                  <button class="cancel">아니요</button>
+                  <button class="save">예</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 불러오기 물체 모달 ***************** -->
+
+    <!-- S:: object tooltip -->
+    <div class="object_tooltip">
+      <div class="title_wrap">
+        <h6>TIP</h6>
+        <div class="btn_close"></div>
+      </div>
+      <ul>
+        <li>
+          <p>1. 천장, 벽면, 바닥 중앙에 오브젝트 배치</p>
+          <p>▶ 오브젝트 선택 후 <span>Ctrl 키를 누른 상태로 클릭</span></p>
+        </li>
+        <li>
+          <p>2. 천장, 벽면, 바닥에 오브젝트 연속 배치</p>
+          <p>▶ 오브젝트 선택 후 <span>Shift 키를 누른 상태로 클릭</span></p>
+        </li>
+      </ul>
+    </div>
+    <!-- E:: object tooltip -->
+
+    <script>
+      $(function () {
+        $(".icon_cube_adjust_wrap").on("click", function () {
+          $(".cube_adjust_wrap").toggleClass("on");
+        });
+
+        $(".icon_object_wrap").on("click", function () {
+          $(".object_list_wrap").toggleClass("on");
+        });
+
+        $(
+          "#createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep1"
+        ).on("click", function () {
+          $(
+            "#createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep1"
+          ).removeClass("on");
+          $(
+            "#createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2"
+          ).removeClass("on");
+          $(this).toggleClass("on");
+          $(this).siblings(".dep2").toggleClass("on");
+          if (
+            $(this).hasClass("on") &&
+            $(this).parent("li").hasClass("object")
+          ) {
+            $(".object_tooltip").addClass("on");
+          } else {
+            $(".object_tooltip").removeClass("on");
+          }
+        });
+
+        $(".object_tooltip .btn_close").on("click", function () {
+          $(".object_tooltip").removeClass("on");
+        });
+
+        $(
+          "#createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2 .dep2_list > li .dep2_menu"
+        ).on("click", function () {
+          $(
+            "#createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2 .dep2_list > li .dep2_menu"
+          ).removeClass("on");
+          $(this).toggleClass("on");
+        });
+
+        $("#createDetailContainer .cube_adjust_wrap .close_adjust_bar").on(
+          "click",
+          function () {
+            $("#createDetailContainer .cube_adjust_wrap").removeClass("on");
+          }
+        );
+
+        $("#createDetailContainer .object_list_wrap .close_object_bar").on(
+          "click",
+          function () {
+            $("#createDetailContainer .object_list_wrap").removeClass("on");
+          }
+        );
+
+        function tempSaveToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green temp_save_toast"><p>임시 저장 되었습니다</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.temp_save_toast").remove();
+          }, 3000);
+        }
+
+        $("#temp_save_toast_call").on("click", function () {
+          if (true) tempSaveToastPop();
+        });
+
+        // S:::: 천장 모달
+        $("#image_change_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".image_change_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".image_change_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+
+        $(".image_change_modal .renewal_pop_box .col-5-list-wrap li").on(
+          "click",
+          function () {
+            $(
+              ".image_change_modal .renewal_pop_box .col-5-list-wrap li"
+            ).removeClass("on");
+            $(this).addClass("on");
+          }
+        );
+        // E:::: 천장 모달
+
+        // S:::: 타입변경 모달
+        $("#type_change_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".type_change_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".type_change_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+
+        $(".type_change_modal .renewal_pop_box .col-5-list-wrap li").on(
+          "click",
+          function () {
+            $(
+              ".type_change_modal .renewal_pop_box .col-5-list-wrap li"
+            ).removeClass("on");
+            $(this).addClass("on");
+          }
+        );
+        // E:::: 타입변경 모달
+
+        // S:::: 공간 이동 모달
+        $("#interactive_space_move_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".interactive_move_change_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".interactive_move_change_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+
+        $(
+          ".interactive_move_change_modal .renewal_pop_box .col-5-list-wrap li"
+        ).on("click", function () {
+          $(
+            ".interactive_move_change_modal .renewal_pop_box .col-5-list-wrap li"
+          ).removeClass("on");
+          $(this).addClass("on");
+        });
+        // E:::: 공간 이동 모달
+
+        // S:::: 인터랙티브
+        $(
+          "#createDetailContainer .cube_adjust_wrap .cube_adjust_list > li.interactive .interactive_list_wrap li"
+        ).on("click", function () {
+          $(
+            "#createDetailContainer .cube_adjust_wrap .cube_adjust_list > li.interactive .interactive_list_wrap li"
+          ).removeClass("on");
+          $(this).addClass("on");
+        });
+        // E:::: 인터랙티브
+
+        // S:::: 인터랙티브 사진 모달
+        $("#interactive_image_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".interactive_image_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".interactive_image_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+        // E:::: 인터랙티브 사진 모달
+
+        // S:::: 인터랙티브 영상 모달
+        $("#interactive_video_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".interactive_video_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".interactive_video_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+
+        $(".interactive_video_modal .video-col-4-list li").on(
+          "click",
+          function () {
+            $(".interactive_video_modal .video-col-4-list li").removeClass(
+              "on"
+            );
+            $(this).addClass("on");
+          }
+        );
+        // E:::: 인터랙티브 영상 모달
+
+        // S:::: 인터랙티브 노래 모달
+        $("#interactive_music_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".interactive_music_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".interactive_music_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+
+        $(".interactive_music_modal .tab_btn_wrap li").on("click", function () {
+          $(".interactive_music_modal .tab_btn_wrap li").removeClass("on");
+          $(this).addClass("on");
+
+          $(".interactive_music_modal .tab_container > div").hide();
+          let onTab = $(this).find("a").attr("href");
+          $(onTab).show();
+          return false;
+        });
+
+        $(
+          ".interactive_music_modal .tab_container #recommend_tab .recommend_dropdown_wrap .dropdown_btn"
+        ).on("click", function () {
+          $(this).toggleClass("on");
+          $(
+            ".interactive_music_modal .tab_container #recommend_tab .recommend_dropdown_wrap .dropdown_container"
+          ).toggleClass("on");
+        });
+
+        $(
+          ".interactive_music_modal .tab_container #recommend_tab .recommend_dropdown_wrap .dropdown_container li"
+        ).on("click", function () {
+          $(
+            ".interactive_music_modal .tab_container #recommend_tab .recommend_dropdown_wrap .dropdown_container"
+          ).removeClass("on");
+        });
+
+        $(".interactive_music_modal .tab_container .music_contents_wrap li").on(
+          "click",
+          function () {
+            $(
+              ".interactive_music_modal .tab_container .music_contents_wrap li"
+            ).removeClass("on");
+            $(this).addClass("on");
+          }
+        );
+
+        $(
+          ".interactive_music_modal .tab_container .music_contents_wrap li .tag"
+        ).on("click", function () {
+          $(this).toggleClass("on");
+        });
+
+        $(".interactive_music_modal #music_search_input").on(
+          "change keyup paste",
+          function () {
+            let inputLength = $(
+              ".interactive_music_modal #music_search_input"
+            ).val().length;
+
+            if (inputLength > 0) {
+              $(
+                ".interactive_music_modal .tab_container #search_tab .music_search_wrap .init_icon"
+              ).addClass("on");
+            } else {
+              $(
+                ".interactive_music_modal .tab_container #search_tab .music_search_wrap .init_icon"
+              ).removeClass("on");
+            }
+          }
+        );
+        // E:::: 인터랙티브 노래 모달
+
+        // S:::: 인터랙티브 스티커 모달
+        $("#interactive_sticker_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".interactive_sticker_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".interactive_sticker_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+
+        $(
+          ".interactive_sticker_modal .sticker_list_wrapper .col-5-list-wrap li"
+        ).on("click", function () {
+          $(
+            ".interactive_sticker_modal .sticker_list_wrapper .col-5-list-wrap li"
+          ).removeClass("on");
+          $(this).addClass("on");
+        });
+        // E:::: 인터랙티브 스티커 모달
+
+        // S:::: 인터랙티브 링크 모달
+        $("#interactive_link_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".interactive_link_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".interactive_link_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+        // E:::: 인터랙티브 링크 모달
+
+        // S:::: 인터랙티브 임베드 모달
+        $("#interactive_embede_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".interactive_embede_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".interactive_embede_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+
+        $(
+          ".interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_select"
+        ).on("click", function () {
+          $(
+            ".interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_list"
+          ).toggleClass("on");
+        });
+
+        $(
+          ".interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_list > ul > li"
+        ).on("click", function () {
+          $(
+            ".interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_list"
+          ).removeClass("on");
+          const selectImg = $(
+            ".interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_select .info_wrap > i img"
+          );
+          const selectP = $(
+            ".interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_select .info_wrap .text_wrap p"
+          );
+          const selectSpan = $(
+            ".interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_select .info_wrap .text_wrap span"
+          );
+
+          let newImgSrc = $(this).find("img").attr("src");
+          let newP = $(this).find(".text_wrap p").text();
+          let newSpan = $(this).find(".text_wrap span").text();
+
+          selectImg.attr("src", newImgSrc);
+          selectP.text(newP);
+          selectSpan.text(newSpan);
+        });
+        // E:::: 인터랙티브 임베드 모달
+
+        // S:::: 인터랙티브 전시 모달
+        $("#interactive_exhibition_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".interactive_exhibition_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".interactive_exhibition_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+
+        $(".interactive_exhibition_modal .exhibition_image_wrap").on(
+          "click",
+          function () {
+            $(".interactive_exhibition_modal .sub_image_alert").addClass("on");
+          }
+        );
+
+        $(".interactive_exhibition_modal .sub_image_alert li").on(
+          "click",
+          function () {
+            $(".interactive_exhibition_modal .sub_image_alert").removeClass(
+              "show"
+            );
+          }
+        );
+
+        $(
+          ".interactive_exhibition_modal .exhibition_body_wrap #exhibition_title"
+        ).on("change keyup paste", function () {
+          let inputLength = $(this).val().length;
+          $(
+            ".interactive_exhibition_modal .exhibition_body_wrap .input_wrap .count_wrap .count"
+          ).text(inputLength);
+        });
+
+        $(
+          ".interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap .image_wrap li"
+        ).on("click", function () {
+          $(
+            ".interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap .image_wrap li"
+          ).removeClass("on");
+          $(this).toggleClass("on");
+        });
+
+        $(
+          ".interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap .add_wrap"
+        ).on("click", function () {
+          $(".interactive_exhibition_modal .sub_image_alert").removeClass("on");
+        });
+        // E:::: 인터랙티브 전시 모달
+
+        // S:::: 인터랙티브 공간 연결 모달
+        $("#interactive_space_link_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".interactive_space_link_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".interactive_space_link_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+
+        $(".interactive_space_link_modal .tab_btn_wrap li").on(
+          "click",
+          function () {
+            $(".interactive_space_link_modal .tab_btn_wrap li").removeClass(
+              "on"
+            );
+            $(this).addClass("on");
+
+            $(".interactive_space_link_modal .tab_container > div").hide();
+            let onTab = $(this).find("a").attr("href");
+            $(onTab).show();
+            return false;
+          }
+        );
+
+        $(".interactive_space_link_modal .space-link-col-5-list li").on(
+          "click",
+          function () {
+            $(
+              ".interactive_space_link_modal .space-link-col-5-list li"
+            ).removeClass("on");
+            $(this).toggleClass("on");
+          }
+        );
+        $(
+          ".interactive_space_link_modal #space_link_myspace .space-link-col-5-list li"
+        ).on("click", function () {
+          $("#myspace_alert").addClass("on");
+        });
+
+        $("#myspace_alert .pop_close").on("click", function () {
+          $("#myspace_alert").removeClass("on");
+        });
+
+        $(
+          ".interactive_space_link_modal #space_link_search .space_link_search_wrapper > i"
+        ).on("click", function () {
+          $(this).toggleClass("on");
+          $(".interactive_space_link_modal .space_link_filter_alert").addClass(
+            "on"
+          );
+        });
+
+        $(
+          ".interactive_space_link_modal .space_link_filter_alert .filter_pop_close"
+        ).on("click", function () {
+          $(
+            ".interactive_space_link_modal .space_link_filter_alert"
+          ).removeClass("on");
+          $(
+            ".interactive_space_link_modal #space_link_search .space_link_search_wrapper > i"
+          ).removeClass("on");
+        });
+
+        $(
+          ".interactive_space_link_modal .space_link_filter_alert .filter_list_wrap li"
+        ).on("click", function () {
+          $(
+            ".interactive_space_link_modal .space_link_filter_alert .filter_list_wrap li"
+          ).removeClass("on");
+          $(this).addClass("on");
+        });
+
+        $(".interactive_space_link_modal #space_link_search_input").on(
+          "change keyup paste",
+          function () {
+            let inputLength = $(
+              ".interactive_space_link_modal #space_link_search_input"
+            ).val().length;
+
+            if (inputLength > 0) {
+              $(
+                ".interactive_space_link_modal #space_link_search .space_link_search_wrap .init_icon"
+              ).addClass("on");
+            } else {
+              $(
+                ".interactive_space_link_modal #space_link_search .space_link_search_wrap .init_icon"
+              ).removeClass("on");
+            }
+          }
+        );
+
+        // E:::: 인터랙티브 공간 연결 모달
+
+        // S:::: 인터랙티브 tts 모달
+        $("#interactive_tts_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".interactive_tts_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".interactive_tts_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+
+        $(".interactive_tts_modal #tts_textarea").on(
+          "change keyup paste",
+          function () {
+            let inputLength = $(this).val().length;
+            $(".interactive_tts_modal .textarea_wrap .count_wrap .count").text(
+              inputLength
+            );
+          }
+        );
+        // E:::: 인터랙티브 tts 모달
+
+        // S:::: 인터랙티브 text 모달
+        $("#interactive_text_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".interactive_text_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".interactive_text_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+
+        $(".interactive_text_modal .text_weight_wrap li").on(
+          "click",
+          function () {
+            $(".interactive_text_modal .text_weight_wrap li").removeClass("on");
+            $(this).toggleClass("on");
+          }
+        );
+
+        // E:::: 인터랙티브 text 모달
+
+        // S:::: 오브젝트
+        $(
+          "#createDetailContainer .cube_adjust_wrap .cube_adjust_list > li.object .objects_list_wrap li"
+        ).on("click", function () {
+          $(
+            "#createDetailContainer .cube_adjust_wrap .cube_adjust_list > li.object .objects_list_wrap li"
+          ).removeClass("on");
+          $(this).addClass("on");
+        });
+        // E:::: 오브젝트
+
+        // S:::: 오브젝트 공간조명 모달
+        $("#objects_light_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".objects_light_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".objects_light_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+        // E:::: 오브젝트 공간조명 모달
+
+        // S:::: 오브젝트 벽면조명 모달
+        $("#objects_wall_light_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".objects_wall_light_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".objects_wall_light_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+        // E:::: 오브젝트 벽면조명 모달
+
+        // S:::: 오브젝트 3D 텍스트 모달
+        $("#objects_threed_text_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".objects_threed_text_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".objects_threed_text_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+
+        $(".objects_threed_text_modal .text_weight_wrap li").on(
+          "click",
+          function () {
+            $(".objects_threed_text_modal .text_weight_wrap li").removeClass(
+              "on"
+            );
+            $(this).toggleClass("on");
+          }
+        );
+
+        $(".objects_threed_text_modal #size_range_slider").on(
+          "change keyup paste",
+          function () {
+            $(".objects_threed_text_modal .size_count").text($(this).val());
+          }
+        );
+        // E:::: 오브젝트 3D 텍스트 모달
+
+        // S:::: 오브젝트 3D 물체 모달
+        $("#objects_threed_thing_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".objects_threed_thing_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".objects_threed_thing_modal.space_create_modal .pop_close").on(
+          "click",
+          function () {
+            $(".space_create_modal").removeClass("show");
+            $("body").removeClass("scroll_stop");
+          }
+        );
+
+        $(".objects_light_modal .threed_list_wrap ul li").on(
+          "click",
+          function () {
+            $(".objects_light_modal .threed_list_wrap ul li").removeClass("on");
+            $(this).toggleClass("on");
+          }
+        );
+
+        // E:::: 오브젝트 3D 물체 모달
+
+        // S:::: 불러오기 모달
+        $("#load_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".load_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".load_modal.space_create_modal .pop_close").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        $(".load_modal .col-3-list-wrap li").on("click", function () {
+          $(".load_modal .col-3-list-wrap li").removeClass("on");
+          $(this).addClass("on");
+          $(".load_modal .load_alert").addClass("on");
+        });
+
+        $(".load_modal .load_alert .btn_wrap button").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+        // E:::: 불러오기 모달
+      });
+
+      // S:: 높이 range input
+      $(document).ready(function () {
+        let $cubeRangeSlider = $("#cube_range_slider");
+        let $cubeRangefill = $(".cube_range_container .bar .fill");
+
+        function cubeRangeSetBar() {
+          $cubeRangefill.css("width", $cubeRangeSlider.val() + "%");
+        }
+
+        $cubeRangeSlider.on("input", cubeRangeSetBar);
+
+        cubeRangeSetBar();
+
+        let $lightRangeSlider = $("#light_range_slider");
+        let $lightRangefill = $(".light_range_container .bar .fill");
+
+        function lightRangeSetBar() {
+          $lightRangefill.css("width", $lightRangeSlider.val() + "%");
+        }
+
+        $lightRangeSlider.on("input", lightRangeSetBar);
+
+        lightRangeSetBar();
+
+        let $wallLightRangeSlider = $("#wall_light_range_slider");
+        let $wallLightRangefill = $(".wall_light_range_container .bar .fill");
+
+        function wallLightRangeSetBar() {
+          $wallLightRangefill.css("width", $wallLightRangeSlider.val() + "%");
+        }
+
+        $wallLightRangeSlider.on("input", wallLightRangeSetBar);
+
+        wallLightRangeSetBar();
+
+        let $sizeRangeSlider = $("#size_range_slider");
+        let $sizeRangefill = $(".size_range_container .bar .fill");
+
+        function sizeRangeSetBar() {
+          $sizeRangefill.css("width", $sizeRangeSlider.val() + "%");
+        }
+
+        $sizeRangeSlider.on("input", sizeRangeSetBar);
+
+        sizeRangeSetBar();
+      });
+      // E:: 높이 range input
+
+      window.addEventListener("DOMContentLoaded", () => {
+        var textColorPicker = new iro.ColorPicker(".text_colorPicker", {
+          width: 210,
+          color: "rgb(255, 0, 0)",
+        });
+        var objectsLightColorPicker = new iro.ColorPicker(
+          ".objects_light_colorPicker",
+          {
+            width: 210,
+            color: "rgb(255, 0, 0)",
+          }
+        );
+        var objectsWallLightColorPicker = new iro.ColorPicker(
+          ".objects_wall_light_colorPicker",
+          {
+            width: 210,
+            color: "rgb(255, 0, 0)",
+          }
+        );
+        var threeDColorPicker = new iro.ColorPicker(
+          ".threed_text_colorPicker",
+          {
+            width: 210,
+            color: "rgb(255, 0, 0)",
+          }
+        );
+      });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+/* Spoqa Han Sans Neo */
+@font-face {
+    font-family: "Spoqa Han Sans Neo";
+    font-weight: 700;
+    src: local("Spoqa Han Sans Neo Bold"), url("../fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "Spoqa Han Sans Neo";
+    font-weight: 500;
+    src: local("Spoqa Han Sans Neo Medium"), url("../fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: "Spoqa Han Sans Neo";
+    font-weight: 400;
+    src: local("Spoqa Han Sans Neo Regular"), url("../fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Regular.woff") format("woff");
+}
+@font-face {
+    font-family: "Spoqa Han Sans Neo";
+    font-weight: 300;
+    src: local("Spoqa Han Sans Neo Light"), url("../fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Light.woff") format("woff");
+}
+@font-face {
+    font-family: "Spoqa Han Sans Neo";
+    font-weight: 100;
+    src: local("Spoqa Han Sans Neo Thin"), url("../fonts/SpoqaHanSansNeo/SpoqaHanSansNeo-Thin.woff") format("woff");
+}
+/* HelveticaNowDisplay */
+@font-face {
+    font-family: "HelveticaNowDisplay";
+    font-weight: 700;
+    src: local("HelveticaNowDisplay-Bold"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Bold.woff") format("woff");
+}
+@font-face {
+    font-family: "HelveticaNowDisplay";
+    font-weight: 500;
+    src: local("HelveticaNowDisplay-Medium"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Medium.woff") format("woff");
+}
+@font-face {
+    font-family: "HelveticaNowDisplay";
+    font-weight: 400;
+    src: local("HelveticaNowDisplay-Regular"), url("../fonts/HelveticaNowDisplay/HelveticaNowDisplay-Regular.woff") format("woff");
+}

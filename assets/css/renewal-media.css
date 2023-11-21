@@ -1,0 +1,652 @@
+@media all and (max-width: 1300px) {
+  /* **** S: Header  **** */
+  #header .logo {
+    width: 150px;
+  }
+  #header .logo a {
+    height: 62px;
+}
+  #header .gnb ul li a {
+    padding: 0 5px;
+    margin: 0 5px;
+    font-size: 15px;
+  }
+  #header .gnb ul li a i img {
+    width: 18px;
+  }
+  #header .create_space_btn {
+    line-height: 36px;
+    height: 36px;
+    font-size: 15px;
+  }
+  #header .member_util .login_link {
+    font-size: 15px;
+    padding: 0 12px;
+    line-height: 36px;
+  }
+  #header .member_util .join_link {
+    width: 90px;
+    line-height: 36px;
+    height: 36px;
+    font-size: 15px;
+  }
+  /* **** E: Header  **** */
+
+  /* **** S: Container  **** */
+  #container.header_in {
+    padding-top: 62px;
+  }
+  .renewal_card_slider_section .slick-arrow {
+    display: none;
+  }
+  /* **** E: Container  **** */
+}
+
+
+@media all and (max-width: 1024px) {
+  .renewal_card_slider_section .renewal_card_list_slick_slider .slick-slide {
+    padding: 0 calc((60px / 4) / 2);
+  }
+
+  /* S: Search01 */
+  .renewal_card_wrapper .renewal_card_list {
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  .renewal_card_wrapper .renewal_card_list li {
+    width: calc(25% - 60px / 4);
+  }
+  .renewal_card_wrapper .renewal_card_list li:nth-child(n + 6) {
+    margin-top: 0;
+  }
+  /* E: Search01 */
+
+  /* S: SpaceCreate */
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper {
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap {
+    border-right: 0 none;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 25px;
+  }
+
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul.mo_list {
+    display: flex;
+    gap: 20px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul.pc_list {
+    display: none;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul li:not(:last-child) {
+    margin-bottom: 0;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul li {
+    width: calc(50% - 10px);
+    background-color: #dddddd;
+    height: 50px;
+    border-radius: 6px;
+    justify-content: center;
+    align-items: center;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul.mo_list li.on {
+    background-color: #7e73eb;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul.mo_list li.on span{
+    color: #fff;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul.mo_list li.excube.on i {
+    background: url("../images/renewal/mo-pop-excube-icon-on.png") no-repeat 50% center / cover;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul.mo_list li.cube.on i {
+    background: url("../images/renewal/mo-pop-cube-icon-on.png") no-repeat 50% center / cover;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap {
+    width: 100%;
+    padding-left: 0;
+    min-height: 1px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul {
+    gap: 25px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul li {
+    width: calc(33.333% - 50px / 3);
+    margin-right: 0;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul li:nth-child(n + 4) {
+    margin-top: 30px;
+  }
+  /* E: SpaceCreate */
+}
+
+@media all and (max-width: 900px) {
+  /* **** S: Header  **** */
+  #header .inner {
+    display: flex;
+    align-items: center;
+  }
+  #header .gnb {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    z-index: 111;
+    /* transition: transform .5s ease .3s; */
+  }
+  #header .gnb.open {
+      transform: translateX(0%);
+      transition: transform .5s ease;
+  }
+  #header .gnb_in {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 60%;
+      min-width: 240px;
+      height: 100%;
+      background: #fff;
+      z-index: 1;
+  }
+  #header .gnb .close_btn {
+      width: 54px;
+      height: 62px;
+      flex: 0 0 auto;
+  }
+  #header .gnb .close_btn img {
+      width: 18px;
+      margin: 0 auto;
+  }
+  #header .gnb ul {
+      display: block;
+      padding: 10px 0;
+      overflow-y: auto;
+  }
+  #header .gnb ul li a {
+      padding: 0 18px;
+      line-height: 49px;
+      font-size: 16px;
+      color: #0f151b !important;
+  }
+  #header .gnb .dim {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      opacity: 0;
+      /* transition: opacity .3s ease; */
+  }
+  #header .gnb .dim.only_mo {
+    display: block !important;
+  }
+  #header .gnb.open .dim {
+      opacity: 1;
+      transition: opacity .3s ease .5s;
+  }
+  #header .gnb .close_btn.only_mo {
+    display: block !important;
+  }
+  #header .ham_btn.only_mo {
+    display: block !important;
+    height: 40px;
+        padding: 0 15px;
+        margin-left: -15px;
+        margin-right: 3px;
+  }
+  #header .ham_btn img {
+    width: 24px;
+    margin: 0 auto;
+    transition: all .3s ease;
+  }
+  #header .header_wrap {
+    width: calc(100% - 42px);
+    justify-content: space-between;
+  }
+  /* **** E: Header  **** */
+
+  .renewal_hashtag_wrap {
+    overflow: scroll;
+  }
+
+  .renewal_hashtag_wrap > ul {
+    width: 800px;
+  }
+}
+
+@media all and (max-width: 768px) {
+
+  .renewal_card_slider_section .renewal_card_list_slick_slider .slick-slide {
+    padding: 0 5px;
+  }
+  
+  /* S: Search01 */
+  .renewal_search.my50 {
+    margin: 40px 0;
+  }
+  .renewal_search .search_wrap {
+    width: 100%;
+  }
+  .renewal_card_wrapper .renewal_card_list {
+    gap: 10px;
+    justify-content: flex-start;
+  }
+  .renewal_card_wrapper .renewal_card_list li {
+    width: calc(33.333% - 20px / 3);
+  }
+  .renewal_card_wrapper .renewal_card_list li:nth-child(n + 4) {
+    margin-top: 20px;
+  }
+  /* E: Search01 */
+
+  /* S: SpaceCreate */
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul {
+    gap: 20px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul li{
+    width: calc(50% - 20px / 2);
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul li:nth-child(n + 3) {
+    margin-top: 30px;
+  }
+  /* E: SpaceCreate */
+
+}
+
+
+
+@media all and (max-width: 640px) {
+  /* **** S: Header  **** */
+  #header .create_space_btn {
+    width: 94px;
+    height: 29px;
+    font-size: 13px;
+  }
+  #header .member_util .login_link {
+    font-size: 13px;
+  }
+  #header .member_util .join_link {
+    width: 63px;
+    height: 29px;
+    line-height: 29px;
+    font-size: 13px;
+  }
+  #header .logo {
+    width: 130px;
+  }
+  #header .logo a img {
+    width: 130px;
+  }
+  /* **** E: Header  **** */
+
+  .renewal_card_slider_section {
+    padding-bottom: 40px;
+  }
+  .renewal_card_wrapper .title {
+    margin-bottom: 25px;
+    font-size: 24px;
+  }
+  .renewal_card_slider_section.pt100 {
+    padding-top: 70px;
+  }
+  .renewal_card_slider_section.pb100 {
+    padding-bottom: 70px;
+  }
+  .renewal_card_wrapper .renewal_card_list li > i img{
+    width: 100%;
+  }
+  .renewal_card_section .renewal_hashtag_wrap ul {
+    width: 660px;
+  }
+  .renewal_card_section .renewal_hashtag_wrap ul li {
+    font-size: 14px;
+    padding: 10px 30px;
+  }
+  .renewal_long_card_slider_section {
+    padding-bottom: 40px;
+  }
+  .renewal_card_wrapper .renewal_card_list li .btn_wrap > div {
+    margin-right: 8px;
+  }
+  .renewal_card_wrapper .renewal_card_list li .btn_wrap > div span {
+    font-size: 12px;
+  }
+  .renewal_card_wrapper .renewal_card_list li .btn_wrap > .card_view i {
+    width: 20px;
+    height: 16px;
+  }
+  .renewal_card_wrapper .renewal_card_list li .btn_wrap > .card_heart i {
+    width: 20px;
+    height: 19px;
+  }
+  .renewal_card_wrapper .renewal_card_list li .btn_wrap > .card_comment i {
+    width: 20px;
+    height: 19px;
+  }
+  .renewal_long_card_slider_section .renewal_long_card_list_slick_slider .slick-slide {
+    padding: 0 5px;
+  }
+
+  .renewal_card_section.pb100 {
+    padding-bottom: 70px;
+  }
+
+  /* S: Search01 */
+  .renewal_card_wrapper .renewal_card_list li {
+    width: calc(50% - 5px);
+  }
+  .renewal_card_wrapper .renewal_card_list li:nth-child(n + 3) {
+    margin-top: 10px;
+  }
+  .renewal_viewmore_wrap.mt50 {
+    margin-top: 40px;
+  }
+  .renewal_viewmore_wrap > button {
+    padding: 0;
+    width: 120px;
+    height: 50px;
+    font-size: 14px;
+    border-radius: 25px;
+  }
+  /* E: Search01 */
+
+  /* S: Search02 */
+  .renewal_card_wrapper.mb85 {
+    margin-bottom: 80px;
+  }
+  .renewal_card_section#search02_section .tab_btn_wrap {
+    margin-bottom: 40px;
+  }
+  .renewal_card_section#search02_section .tab_btn {
+    width: 33.333%;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .renewal_card_section#search02_section .tab_btn a {
+    font-size: 15px;
+  }
+  .renewal_viewmore_wrap.line-wrap .grey_line {
+    width: calc(50% - 80px);
+  }
+  /* E: Search02 */
+
+  /* S: SpaceCreate */
+  .pop_space_create .renewal_pop_box {
+    padding: 40px 20px;
+  }
+  .pop_space_create .renewal_pop_box .pop_title {
+    font-size: 26px;
+    margin-bottom: 40px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul.mo_list {
+    gap: 10px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul.mo_list li {
+    width: calc(50% - 5px);
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul li.excube i {
+    margin-right: 8px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul li.cube i {
+    margin-right: 8px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul li {
+    width: 100%;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul li .cube_image {
+    height: 57.813vw;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul li.on {
+    margin-bottom: 30px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul li:nth-child(n + 3) {
+    margin-top: 0;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul li > span {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul li.on > span .custom_label {
+    font-size: 14px;
+  }
+  /* E: SpaceCreate */
+
+}
+
+@media all and (max-width: 480px) {
+  /* **** S: Header  **** */
+  #header .member_util {
+    display: none;
+  }
+  #header .member_util.only_small_mo {
+    display: block;
+  }
+  #header .member_util.only_small_mo > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  #header .member_util.only_small_mo > ul {
+    padding: 0 14px;
+  }
+  #header .member_util.only_small_mo > ul li {
+    
+  }
+  #header .member_util.only_small_mo > ul li:last-child {
+    width: 100%;
+  }
+  #header .member_util.only_small_mo > ul li a.create_space_btn {
+    font-size: 13px;
+    padding: 0;
+    margin: 0;
+  }
+  #header .member_util .join_link {
+    width: 94px;
+  }
+  /* **** E: Header  **** */
+
+  /* S: Common */
+  .pop_space_create .pop_close {
+    width: 36px;
+    height: 32px;
+    background-size: 16px;
+  }
+  /* E: Common */
+
+  .banner_slider {
+    height: 550px;
+  }
+  .banner_slider .swiper-pagination {
+    bottom: 25px;
+  }
+  .banner_slider .swiper-pagination .swiper-pagination-bullet {
+    margin: 0 3px;
+    width: 6px;
+    height: 6px;
+  }
+  .banner_slider .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    width: 14px;
+    height: 8px;
+  }
+
+
+  .renewal_card_slider_section {
+    padding-bottom: 30px;
+  }
+  .renewal_card_wrapper .title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  .renewal_card_slider_section.pt100 {
+    padding-top: 60px;
+  }
+  .renewal_card_slider_section.pb100 {
+    padding-bottom: 60px;
+  }
+  .renewal_card_wrapper .title {
+    margin-bottom: 15px;
+    font-size: 18px;
+  }
+  .renewal_card_wrapper .renewal_card_list li > i > span {
+    font-size: 14px;
+    bottom: 15px;
+    left: 10px;
+  }
+  .renewal_card_section .renewal_hashtag_wrap ul {
+    gap: 10px;
+    width: 560px;
+  }
+  .renewal_card_section .renewal_hashtag_wrap ul li {
+    font-size: 13px;
+    padding: 8px 25px;
+  }
+  .renewal_long_card_slider_section .renewal_long_card_list_slick_slider .slick-slide {
+    padding: 0 3px;
+  }
+  .renewal_card_slider_section .renewal_card_list_slick_slider .slick-slide {
+    padding: 0 3px;
+  }
+  .renewal_card_wrapper .renewal_card_list li .btn_wrap > div {
+    margin-right: 6px;
+  }
+  .renewal_card_wrapper .renewal_card_list li .btn_wrap > div span {
+    font-size: 11px;
+  }
+  .renewal_card_wrapper .renewal_card_list li .btn_wrap > .card_view i {
+    width: 16px;
+    height: 13px;
+  }
+  .renewal_card_wrapper .renewal_card_list li .btn_wrap > .card_heart i {
+    width: 16px;
+    height: 15px;
+  }
+  .renewal_card_wrapper .renewal_card_list li .btn_wrap > .card_comment i {
+    width: 16px;
+    height: 15px;
+  }
+  .renewal_card_slider_section .renewal_card_list_slick_slider .slick-dots {
+    gap: 6px;
+    top: -13px;
+  }
+  .renewal_card_slider_section .renewal_card_list_slick_slider .slick-dots li {
+    width: 6px;
+    height: 6px;
+  }
+  .renewal_card_slider_section .renewal_card_list_slick_slider .slick-dots li.slick-active {
+    width: 16px;
+    height: 6px;
+  }
+  .renewal_long_card_slider_section .renewal_long_card_list_slick_slider .slick-dots {
+    gap: 6px;
+    top: -13px;
+  }
+  .renewal_long_card_slider_section .renewal_long_card_list_slick_slider .slick-dots li {
+    width: 6px;
+    height: 6px;
+  }
+  .renewal_long_card_slider_section .renewal_long_card_list_slick_slider .slick-dots li.slick-active {
+    width: 16px;
+    height: 6px;
+  }
+
+  /* S: Search01 */
+  .renewal_search.my50 {
+    margin: 35px 0;
+  }
+  .renewal_search .search_wrap {
+    height: 40px;
+  }
+  .renewal_search .search_wrap .search_input {
+    padding: 0 40px 0 20px;
+    font-size: 14px;
+  }
+  .renewal_search .search_wrap .search_value_init {
+    width: 9px;
+    height: 9px;
+    right: 50px;
+  }
+  .renewal_search .search_button {
+    width: 16px;
+    height: 16px;
+    right: 20px;
+  }
+  .renewal_card_section.pb100 {
+    padding-bottom: 60px;
+  }
+  .renewal_viewmore_wrap.mt50 {
+    margin-top: 35px;
+  }
+  .renewal_viewmore_wrap > button {
+    padding: 0;
+    width: 100px;
+    height: 40px;
+    font-size: 13px;
+    border-radius: 30px;
+  }
+  /* E: Search01 */
+
+  /* S: Search02 */
+  .renewal_card_wrapper.mb85 {
+    margin-bottom: 70px;
+  }
+  .renewal_card_section#search02_section .tab_btn_wrap {
+    margin-bottom: 30px;
+  }
+  .renewal_card_section#search02_section .tab_btn {
+    padding: 15px 0;
+  }
+  .renewal_card_section#search02_section .tab_btn a {
+    font-size: 14px;
+  }
+  .renewal_viewmore_wrap.line-wrap .grey_line {
+    width: calc(50% - 80px);
+  }
+  /* E: Search02 */
+
+  /* S: SpaceCreate */
+  .pop_space_create .renewal_pop_box .pop_title {
+    margin-bottom: 30px; 
+    font-size: 22px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul li {
+    height: 44px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul li.excube i {
+    width: 30px;
+    height: 30px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul li.cube i {
+    width: 16px;
+    height: 19px;
+    margin-left: 14px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_menu_wrap ul li span {
+    font-size: 14px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul {
+    gap: 10px;
+  }
+
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul li > span {
+    font-size: 14px;
+    margin-top: 15px;
+  }
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap ul li.on > span .custom_label {
+    font-size: 13px;
+    height: 40px;
+    line-height: 40px;
+  }
+  /* E: SpaceCreate */
+
+}

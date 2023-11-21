@@ -1,0 +1,353 @@
+/* main common */
+.page_main .ttl_row.center {
+    text-align: center;
+}
+.page_main .ttl_row .ttl {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #fff;
+}
+.page_main .ttl_row .ttl strong {
+    color: #7e73eb;
+}
+.page_main .ttl_row .desc {
+    margin-top: 30px;
+    font-size: 18px;
+    color: #414548;
+    line-height: 1.7;
+}
+
+
+/* main_visual */
+.page_main .main_visual {
+    position: relative;
+}
+.page_main .main_visual .inner {
+    padding: 197px 0 160px;
+}
+.page_main .main_visual .ttl_row .ttl {
+    color: #0f151b;
+}
+.page_main .main_visual .app_down_link {
+    margin-top: 58px;
+}
+.page_main .main_visual .mv_slider {
+    position: relative;
+    max-width: 1230px;
+    margin: 158px auto 0;
+    padding: 0 76px;
+}
+.page_main .main_visual .mv_slider .swiper {
+    overflow: hidden;
+    border-radius: 276px;
+    transition: border-radius .8s ease;
+}
+.page_main .main_visual .mv_slider .swiper:hover {
+    border-radius: 100px;
+}
+.page_main .main_visual .mv_slider .vr_area {
+    position: relative;
+    height: 552px;
+}
+.page_main .main_visual .mv_slider .vr_area iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.page_main .main_visual .mv_slider .swiper_arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    width: 58px;
+    height: 58px;
+    background: url('../images/btn/slider_arrow.png') center center no-repeat;
+    text-indent: -9999em;
+    border-radius: 50%;
+}
+.page_main .main_visual .mv_slider .swiper_arrow.swiper_prev {
+    left: 0;
+}
+.page_main .main_visual .mv_slider .swiper_arrow.swiper_next {
+    right: 0;
+    transform: translateY(-50%) rotate(180deg);
+}
+.page_main .main_visual .mv_slider .swiper-pagination {
+    display: flex;
+    align-items: center;
+    bottom: -38px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.page_main .main_visual .mv_slider .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    margin: 0 3px;
+    background: #bdbfc1;
+    opacity: 1;
+}
+.page_main .main_visual .mv_slider .swiper-pagination-bullet-active {
+    background: #0f151b;
+}
+
+/* phone_sec */
+.page_main .phone_sec {
+    padding: 157px 0 171px;
+    background: url('../images/main/phone_sec_bg.jpg') center bottom no-repeat;
+    background-size: cover;
+}
+.page_main .phone_sec .phone_step {
+    display: flex;
+    align-items: flex-start;
+    /* max-width: 1206px; */
+    padding: 0 47px;
+    margin: 0 -87px;
+}
+.page_main .phone_sec .phone_step li {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    /* padding: 0 87px; */
+}
+.page_main .phone_sec .phone_step li .num {
+    display: block;
+    margin-bottom: 24px;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: "HelveticaNowDisplay";
+    color: #fff;
+}
+.page_main .phone_sec .phone_step li .phone_ttl {
+    font-size: 22px;
+    font-weight: 500;
+    color: #fff;
+    line-height: 1.2;
+}
+.page_main .phone_sec .phone_step li .phone_ttl strong {
+    display: block;
+    font-size: 42px;
+    color: #7e73eb;
+    line-height: 1.4;
+}
+.page_main .phone_sec .phone_step li .phone_area {
+    position: relative;
+    margin-top: 47px;
+    padding: 0 87px;
+}
+.page_main .phone_sec .phone_step li .phone_area::before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 70px;
+    height: 70px;
+    border: 1px solid #424654;
+    background: #181a21 url('../images/main/phone_arrow.png') 30px center no-repeat;
+    border-radius: 50%;
+    content: '';
+}
+.page_main .phone_sec .phone_step li:first-of-type .phone_area::before {
+    display: none;
+}
+.page_main .phone_sec .phone_step li .phone_box {
+    position: relative;
+}
+.page_main .phone_sec .phone_step li .phone_frame {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+.page_main .phone_sec .phone_step li .video_area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 2.448% 2.098%; /* 7px 6px */
+}
+.page_main .phone_sec .phone_step li .video_box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.page_main .phone_sec .phone_step li .video_box::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000;
+    content: '';
+}
+.page_main .phone_sec .phone_step li .video_box video {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* start_sec */
+.page_main .start_sec {
+    padding: 110px 0 90px;
+    background: #5145ce url('../images/main/start_sec_bg.jpg') center center no-repeat;
+    background-size: cover;
+}
+.page_main .start_sec .ttl_row .desc {
+    margin-top: 20px;
+    color: #fff;
+}
+.page_main .start_sec .start_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 260px;
+    height: 70px;
+    margin: 50px auto 0;
+    border: 1px solid rgba(255, 255, 255, .42);
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    border-radius: 35px;
+}
+
+@media all and (max-width: 1300px) {
+    .page_main .phone_sec .phone_step {
+        margin: 0 -40px;
+        padding: 0;
+    }
+    .page_main .phone_sec .phone_step li .phone_area {
+        padding: 0 40px;
+    }
+    .page_main .phone_sec .phone_step li .phone_area::before {
+        width: 50px;
+        height: 50px;
+        background-position: 20px center;
+        background-size: 10px;
+    }
+
+}
+
+/* tablet */
+@media all and (max-width: 1125px) {
+    /* main common */
+    .page_main .ttl_row .ttl {
+        font-size: 48px;
+    }
+    /* main_visual */
+    .page_main .main_visual .mv_slider {
+        padding: 0 45px;
+    }
+    .page_main .main_visual .mv_slider .swiper_arrow {
+        width: 40px;
+        height: 40px;
+        background-size: cover;
+    }
+
+    /* phone_sec */
+    .page_main .phone_sec .phone_step li .num {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .page_main .phone_sec .phone_step li .phone_ttl {
+        font-size: 18px;
+    }
+    .page_main .phone_sec .phone_step li .phone_ttl strong {
+        font-size: 32px;
+    }
+}
+
+
+/* mobile */
+@media all and (max-width: 640px) {
+
+    /* main_visual */
+    .page_main .main_visual .inner {
+        width: 100%;
+        padding: 77px 0 74px;
+    }
+    .page_main .main_visual .ttl_row .ttl {
+        font-size: 33px;
+    }
+    .page_main .main_visual .ttl_row .desc {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+    .page_main .main_visual .app_down_link {
+        margin-top: 36px;
+    }
+    .page_main .main_visual .mv_slider {
+        width: calc(100% - 14px);
+        margin-top: 48px;
+        padding: 0;
+    }
+    .page_main .main_visual .mv_slider .vr_area {
+        height: 184px;
+        border-radius: 92px;
+    }
+    .page_main .main_visual .mv_slider .swiper_arrow {
+        display: none;
+    }
+    .page_main .main_visual .mv_slider .swiper-pagination {
+        bottom: -18px;
+    }
+    .page_main .main_visual .mv_slider .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+    }
+    
+    /* phone_sec */
+    .page_main .phone_sec {
+        padding: 69px 0 91px;
+        background-color: #181a21;
+        background-image: url('../images/main/phone_sec_bg_mo.jpg');
+    }
+    .page_main .phone_sec .phone_step {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .page_main .phone_sec .phone_step li + li {
+        margin-top: 76px;
+    }
+    .page_main .phone_sec .phone_step li .num {
+        margin-bottom: 18px;
+        font-size: 16px;
+    }
+    .page_main .phone_sec .phone_step li .phone_ttl {
+        font-size: 15px;
+    }
+    .page_main .phone_sec .phone_step li .phone_ttl strong {
+        font-size: 23px;
+    }
+    .page_main .phone_sec .phone_step li .phone_area {
+        padding: 0;
+        width: 52.517%;
+        min-width: 178px;
+        margin: 30px auto 0;
+    }
+    .page_main .phone_sec .phone_step li .phone_area::before {
+        display: none;
+    }
+
+    /* start_sec */
+    .page_main .start_sec {
+        padding: 37px 0 41px;
+        background-image: url('../images/main/start_sec_bg_mo.jpg');
+    }
+    .page_main .start_sec .ttl_row .ttl {
+        font-size: 18px;
+    }
+    .page_main .start_sec .ttl_row .desc {
+        margin-top: 14px;
+        font-size: 12px;
+    }
+    .page_main .start_sec .start_link {
+        width: 163px;
+        height: 40px;
+        margin-top: 18px;
+        font-size: 13px;
+    }
+
+}

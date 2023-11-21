@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.css" />
+    <script src="../assets/js/jquery-1.12.4.min.js"></script>
+
+    <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <title>SELVERS</title>
+  </head>
+  <body>
+    <div id="wrap" class="page_main">
+      <!-- top_banner :: S -->
+      <div class="top_banner renewal">
+        <a href="../rate_plan/rate_plan.html">
+          <p class="txt1">연간결제 <strong>70%할인</strong> 이벤트</p>
+          <p class="txt2">네이버 스마트 스토어 제휴 프로모션</p>
+          <span class="tb_link">구독하기</span>
+        </a>
+        <button type="button" class="tb_close">닫기</button>
+      </div>
+      <!-- top_banner :: E -->
+
+      <!-- header :: S -->
+      <header id="header">
+        <div class="inner">
+            <button type="button" class="ham_btn only_mo">
+                <img src="../assets/images/btn/ham_btn.png" alt="" />
+            </button>
+            <div class="header_wrap">                    
+                <h1 class="logo">
+                    <a href="../main/main.html">
+                        <img src="../assets/images/common/logo.png" alt="selvers" class="only_web" />
+                        <img src="../assets/images/common/logo_mo.png" alt="selvers" class="only_mo" />
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <div class="gnb_in">
+                        <button type="button" class="close_btn only_mo">
+                            <img src="../assets/images/btn/ham_close_btn.png" alt="" />
+                        </button>
+                        <ul>
+                            <li>
+                                <!-- FIX RENEWAL: LINK 연결 필요 -->
+                                <a href="#" class="renewal_nav_feed_btn">
+                                    <i><img src="../assets/images/renewal/nav-feed-icon.png" alt="feed icon" /></i>
+                                    <span>피드</span>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- FIX RENEWAL: LINK 연결 필요 -->
+                                <a href="#" class="renewal_nav_home_btn">
+                                    <i><img src="../assets/images/renewal/nav-home-icon.png" alt="nav home icon" /></i>
+                                    <span>홈</span>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- FIX RENEWAL: LINK 연결 필요 -->
+                                <a href="#" class="renewal_nav_shop_btn">
+                                    <i><img src="../assets/images/renewal/nav-shop-icon.png" alt="nav shop icon" /></i>
+                                    <span>샵</span>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- FIX RENEWAL: LINK 연결 필요 -->
+                                <a href="#" class="renewal_nav_guide_btn">
+                                    <i><img src="../assets/images/renewal/nav-guide-icon.png"
+                                            alt="nav guide icon" /></i>
+                                    <span>가이드</span>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- FIX RENEWAL: LINK 연결 필요 -->
+                                <a href="#" class="renewal_nav_membership_btn">
+                                    <i><img src="../assets/images/renewal/nav-membership-icon.png"
+                                            alt="nav membership icon" /></i>
+                                    <span>멤버쉽</span>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- FIX RENEWAL: LINK 연결 필요 -->
+                                <a href="#" class="renewal_nav_search_btn">
+                                    <i><img src="../assets/images/renewal/nav-search-icon.png"
+                                            alt="nav search icon" /></i>
+                                    <span>검색</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dim only_mo"></div>
+                </nav>
+
+                <div class="member_util">
+                    <ul>
+                        <li>
+                            <!-- FIX RENEWAL: LINK 연결 필요 -->
+                            <a href="#" class="create_space_btn">
+                                <i /></i>
+                                <span>공간 만들기</span>
+                            </a>
+                        </li>
+                        <li><a href="../member/login.html" class="login_link">로그인</a></li>
+                        <li>
+                            <a href="../member/join.html" class="join_link">
+                                <div class="txt_marquee">
+                                    <span>회원가입</span><span>회원가입</span><span>회원가입</span><span>회원가입</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+      </header>
+      <!-- header :: E -->
+
+      <div id="container" class="header_in">
+        <div style="height: 1200px">
+          <div class="inner">
+            <div class="spcae_detail_call">공간바꾸기상세모달 호출</div>
+          </div>
+        </div>
+      </div>
+
+<!-- pop_inquiry -->
+<div class="pop_wrap pop_inquiry">
+  <div class="dim"></div>
+  <div class="pop_box">
+      <div class="pop_head">
+          <h2 class="pop_ttl">문의하기</h2>
+          <button type="button" class="pop_close">닫기</button>
+      </div>
+      <div class="pop_body">
+          <div class="pop_body_in">
+              <div class="input_row">
+                  <strong class="label">이메일</strong>
+                  <div class="input_box">
+                      <input type="text" name="" id="" placeholder="이메일" class="ess_input">
+                  </div>
+              </div>
+              <div class="input_row">
+                  <strong class="label">문의유형</strong>
+                  <div class="input_box">
+                      <select name="" id="">
+                          <option value="">구독문의</option>
+                          <option value="">회원가입</option>
+                          <option value="">주문.결제</option>
+                          <option value="">이용문의</option>
+                          <option value="">광고문의</option>
+                          <option value="">기타</option>
+                      </select>
+                  </div>
+              </div>
+              <div class="input_row">
+                  <strong class="label">문의내용</strong>
+                  <div class="input_box">
+                      <textarea name="" id="" placeholder="무엇을 도와드릴까요?" class="ess_input"></textarea>
+                  </div>
+              </div>
+              
+              <div class="btn_row">
+                  <button type="button" class="btn cancel">취소</button>
+                  <button type="button" disabled class="btn ok">신청하기</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- pop_inquiry_submit -->
+<div class="pop_wrap pop_inquiry_submit">
+  <div class="dim"></div>
+  <div class="pop_box">
+      <div class="pop_body">
+          <div class="pop_body_in">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="pop_cont">
+                  <h2 class="ttl">접수되었습니다.</h2>
+                  <p class="desc">소중한 의견으로 더 나은 서비스를 <br class="only_mo">만들겠습니다.</p>
+              </div>
+              <div class="btn_row">
+                  <button type="button" class="btn ok">확인</button>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- footer :: S -->
+<footer id="footer">
+  <div class="foot_menu">
+      <div class="inner">
+          <ul>
+
+              <li><a href="https://www.selvers.com/" target="_blank">회사소개</a></li>
+              <li><a href="../policy/service.html">이용약관</a></li>
+              <li><a href="../policy/privacy.html"><strong>개인정보처리방침</strong></a></li>
+              <li><a href="../policy/financial.html">전자금융거래 이용약관</a></li>
+              <li class="btn_inquiry_open">문의하기버튼클릭</li>
+          </ul>
+      </div>
+  </div>
+  <div class="foot_info">
+      <div class="inner">
+          <div class="info_row">
+              <div class="company">
+                  <h2>company info</h2>
+                  <address class="info_cont">
+                      <dl>
+                          <dt>기업명</dt>
+                          <dd>(주)셀버스</dd>
+                      </dl>
+                      <dl>
+                          <dt>대표</dt>
+                          <dd>김기동</dd>
+                      </dl>
+                      <dl>
+                          <dt>사업자등록번호</dt>
+                          <dd>807-81-00491</dd>
+                      </dl>
+                      <dl>
+                          <dt>통신판매업신고번호</dt>
+                          <dd>제2018-서울중구-0199호</dd>
+                      </dl>
+                      <dl>
+                          <dt>주소</dt>
+                          <dd>서울특별시 중구 동호로10길 8-21, 4층</dd>
+                      </dl>
+                  </address>
+              </div>
+              <div class="customer">
+                  <h2>customer</h2>
+                  <div class="info_cont">
+                      <dl>
+                          <dt>대표번호</dt>
+                          <dd>02-2278-1279</dd>
+                      </dl>
+                      <dl>
+                          <dt>이메일</dt>
+                          <dd>help@selvers.com </dd>
+                      </dl>
+                      <p class="time">평일 09:00 ~ 18:00 (점심 12:00~13:00) 주말, 공휴일 제외</p>
+                  </div>
+              </div>
+          </div>
+          <p class="copy">Copyright ⓒ 2023 Selvers Inc. All rights reserved.</p>
+          <div class="foot_logo">
+              <a href="/">
+                  <img src="../assets/images/common/foot_logo.png" alt="selvers" class="only_web">
+                  <img src="../assets/images/common/foot_logo_mo.png" alt="selvers" class="only_mo">
+              </a>
+          </div>
+      </div>
+      
+  </div>
+</footer>
+<!-- footer :: E -->
+    </div>
+
+    <!-- pop_myspace_detail -->
+    <div class="pop_wrap pop_space_detail show">
+      <div class="dim"></div>
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <div class="pop_space">
+                <!-- <iframe
+                  src="https://www.selad.co.kr/deco/detail_space?space_seq=812&space_uuid=MDEwN2E5YjcxNmViNDE3OGFjMDU0ZDQzYTU3N2U3NGY"
+                  frameborder="0"
+                ></iframe> -->
+                <div class="bg"></div>
+                <button type="button" class="pop_close">닫기</button>
+                <div class="music-icon-wrap">
+                  <i
+                    ><img
+                      src="../assets/images/renewal/renewal-music-icon.png"
+                      alt="music-icon"
+                  /></i>
+                  <p>
+                    <span>노래 제목</span>
+                    -
+                    <span>가수</span>
+                  </p>
+                </div>
+              </div>
+              <div class="renewal_comment_wrap">
+                <div class="user_info_wrap">
+                  <div class="user_box">
+                    <i class="user_default_icon"
+                      ><img
+                        src="../assets/images/renewal/renewal-user-default-icon.png"
+                        alt="user-icon"
+                    /></i>
+                    <div class="user_wrap">
+                      <p>Selvers</p>
+                      <span>셀버스</span>
+                    </div>
+                  </div>
+                  <div class="btn_box">
+                    <button class="renewal_pop_btn heart">
+                      <i></i>
+                      <span>12</span>
+                    </button>
+                    <button class="renewal_pop_btn comment">
+                      <i></i>
+                      <span>34</span>
+                    </button>
+                    <button class="renewal_pop_btn share">
+                      <i></i>
+                      <span>공유</span>
+                    </button>
+                    <div class="meatballs_wrap">
+                      <i class="meatballs_icon"></i>
+                      <div class="menu_wrap my_menu">
+                        <ul>
+                          <li class="change_space">
+                            <i>
+                              <img
+                                src="../assets/images/renewal/pop-mymenu-mark-14x14.png"
+                                alt="icon"
+                              />
+                            </i>
+                            <span>공간 정보 바꾸기</span>
+                          </li>
+                          <li class="edit_space">
+                            <i>
+                              <img
+                                src="../assets/images/renewal/pop-mymenu-pensil-13x13.png"
+                                alt="icon"
+                              />
+                            </i>
+                            <span>공간 수정하기</span>
+                          </li>
+                          <li class="profile_pin">
+                            <i>
+                              <img
+                                src="../assets/images/renewal/pop-mymenu-pin-11x14.png"
+                                alt="icon"
+                              />
+                            </i>
+                            <span>내 프로필 상단 고정</span>
+                          </li>
+                          <li class="delete">
+                            <i>
+                              <img
+                                src="../assets/images/renewal/pop-menu-delete-14x14.png"
+                                alt="icon"
+                              />
+                            </i>
+                            <span>삭제하기</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- 타인인경우 -->
+                      <div class="menu_wrap others_menu">
+                        <ul>
+                          <li class="report">
+                            <i>
+                              <img
+                                src="../assets/images/renewal/pop-menu-report-12x16.png"
+                                alt="icon"
+                              />
+                            </i>
+                            <span>신고하기</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="pop_comment_wrapper">
+                  <div class="pop_comment_wrap">
+                    <div class="user_input_area">
+                      <i class="user_default_icon"
+                        ><img
+                          src="../assets/images/renewal/renewal-user-default-icon.png"
+                          alt="user-icon"
+                      /></i>
+                      <input type="text" placeholder="댓글을 입력하세요" />
+                    </div>
+                    <div class="submit_area">
+                      <button class="point comment_post">등록</button>
+                    </div>
+                  </div>
+                  <ul class="comment_list">
+                    <li>
+                      <div class="comment_box">
+                        <i class="user_default_icon"
+                          ><img
+                            src="../assets/images/renewal/renewal-user-default-icon.png"
+                            alt="user-icon"
+                        /></i>
+                        <div class="comment_list_body">
+                          <div class="info_wrap">
+                            <p>Kmong 크몽</p>
+                            <span>2023년 10월 9일</span>
+                          </div>
+                          <div class="text_wrap">
+                            댓글 내용 영역입니다 댓글 내용 영역입니다 댓글 내용
+                            영역입니다 댓글 내용 영역입니다 댓글 내용 영역입니다
+                            댓글 내용 영역입니다 댓글 내용영역입니다 댓글 내용
+                            영역입니다 댓글 내용 영역입니다 댓글 내용 영역입니다
+                            댓글 내용 영역입니다
+                          </div>
+                          <div class="btn_wrap">
+                            <span>좋아요 1</span>
+                            <span class="comment">답글</span>
+                            <span class="report">신고</span>
+                          </div>
+                        </div>
+                        <i class="comment_like_icon heart"></i>
+                      </div>
+                      <div class="recomment_wrap">
+                        <div class="pop_comment_wrap">
+                          <div class="user_input_area">
+                            <i class="user_default_icon"
+                              ><img
+                                src="../assets/images/renewal/renewal-user-default-icon.png"
+                                alt="user-icon"
+                            /></i>
+                            <p class="recomment_info_msg">
+                              <b>@Selvers 셀버스</b> 님에게 답글 남기는중
+                            </p>
+                            <input type="text" placeholder="답글 작성..." />
+                          </div>
+                          <div class="submit_area">
+                            <button class="cancel">취소</button>
+                            <button class="submit">등록</button>
+                          </div>
+                        </div>
+                        <div class="comment_btn_wrap">
+                          <i
+                            ><img
+                              src="../assets/images/renewal/renewal-comment-purple-accr-icon.png"
+                              alt="purple icon"
+                          /></i>
+                          <span>답글 2개</span>
+                        </div>
+                        <ul class="recomment_list">
+                          <li>
+                            <div class="comment_box">
+                              <i class="user_default_icon"
+                                ><img
+                                  src="../assets/images/renewal/renewal-user-default-icon.png"
+                                  alt="user-icon"
+                              /></i>
+                              <div class="comment_list_body">
+                                <div class="info_wrap">
+                                  <p>Selvers 셀버스</p>
+                                  <span>5분전(수정됨)</span>
+                                </div>
+                                <div class="text_wrap">
+                                  <b class="user_name">@Selvers 셀버스</b> 댓글
+                                  내용 영역입니다 댓글 내용 영역입니다 댓글 내용
+                                  영역입니다 댓글 내용 영역입니다 댓글 내용
+                                  영역입니다 댓글 내용 영역입니다 댓글
+                                  내용영역입니다 댓글 내용 영역입니다 댓글 내용
+                                  영역입니다 댓글 내용 영역입니다 댓글 내용
+                                  영역입니다
+                                </div>
+                                <div class="btn_wrap">
+                                  <span>좋아요 1</span>
+                                  <span class="comment">답글</span>
+                                  <span class="report">신고</span>
+                                </div>
+                              </div>
+                              <i class="comment_like_icon heart"></i>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="comment_box">
+                              <i class="user_default_icon"
+                                ><img
+                                  src="../assets/images/renewal/renewal-user-default-icon.png"
+                                  alt="user-icon"
+                              /></i>
+                              <div class="comment_list_body">
+                                <div class="info_wrap">
+                                  <p>Kmong 크몽</p>
+                                  <span>방금</span>
+                                </div>
+                                <div class="text_wrap">
+                                  <b class="user_name">@Selvers 셀버스</b> 댓글
+                                  내용 영역입니다 댓글 내용 영역입니다 댓글 내용
+                                  영역입니다 댓글 내용 영역입니다 댓글 내용
+                                  영역입니다 댓글 내용 영역입니다 댓글
+                                  내용영역입니다 댓글 내용 영역입니다 댓글 내용
+                                  영역입니다 댓글 내용 영역입니다 댓글 내용
+                                  영역입니다
+                                </div>
+                                <div class="btn_wrap">
+                                  <span>좋아요 0</span>
+                                  <span class="comment">답글</span>
+                                  <span class="report">신고</span>
+                                </div>
+                              </div>
+                              <i class="comment_like_icon heart"></i>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="comment_box">
+                        <i class="user_default_icon"
+                          ><img
+                            src="../assets/images/renewal/renewal-user-default-icon.png"
+                            alt="user-icon"
+                        /></i>
+                        <div class="comment_list_body">
+                          <div class="info_wrap">
+                            <p>Kmong 크몽</p>
+                            <span>2023년 10월 9일</span>
+                          </div>
+                          <div class="text_wrap">
+                            댓글 내용 영역입니다 댓글 내용 영역입니다 댓글 내용
+                            영역입니다 댓글 내용 영역입니다 댓글 내용 영역입니다
+                            댓글 내용 영역입니다 댓글 내용영역입니다 댓글 내용
+                            영역입니다 댓글 내용 영역입니다 댓글 내용 영역입니다
+                            댓글 내용 영역입니다
+                          </div>
+                          <div class="btn_wrap">
+                            <span>좋아요 1</span>
+                            <span class="comment">답글</span>
+                            <span class="report">신고</span>
+                          </div>
+                        </div>
+                        <i class="comment_like_icon heart"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="comment_box">
+                        <i class="user_default_icon"
+                          ><img
+                            src="../assets/images/renewal/renewal-user-default-icon.png"
+                            alt="user-icon"
+                        /></i>
+                        <div class="comment_list_body">
+                          <div class="info_wrap">
+                            <p>Kmong 크몽</p>
+                            <span>2023년 10월 9일</span>
+                          </div>
+                          <div class="text_wrap">
+                            댓글 내용 영역입니다 댓글 내용 영역입니다 댓글 내용
+                            영역입니다 댓글 내용 영역입니다
+                          </div>
+                          <div class="btn_wrap">
+                            <span>좋아요 1</span>
+                            <span class="comment">답글</span>
+                            <span class="report">신고</span>
+                          </div>
+                        </div>
+                        <i class="comment_like_icon heart"></i>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="comment_box">
+                        <i class="user_default_icon"
+                          ><img
+                            src="../assets/images/renewal/renewal-user-default-icon.png"
+                            alt="user-icon"
+                        /></i>
+                        <div class="comment_list_body">
+                          <div class="info_wrap">
+                            <p>Kmong 크몽</p>
+                            <span>2023년 10월 9일</span>
+                          </div>
+                          <div class="text_wrap">
+                            댓글 내용 영역입니다 댓글 내용 영역입니다 댓글 내용
+                            영역입니다 댓글 내용 영역입니다 댓글 내용 영역입니다
+                            댓글 내용 영역입니다
+                          </div>
+                          <button class="view_more">자세히보기</button>
+                          <div class="btn_wrap">
+                            <span>좋아요 1</span>
+                            <span class="comment">답글</span>
+                            <span class="report">신고</span>
+                          </div>
+                        </div>
+                        <i class="comment_like_icon heart"></i>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+                <div class="comment_more_btn_wrapper">
+                  <button type="button" class="comment_more_btn">
+                    30개 댓글 더보기
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pop_share_code_link -->
+    <div class="pop_wrap pop_share_code_link">
+      <div class="dim"></div>
+      <div class="pop_box">
+        <button type="button" class="pop_close">닫기</button>
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <div class="copy_tab_wrap">
+                <ul class="copy_tab">
+                  <li>
+                    <button type="button" class="tab_btn source_code on">
+                      <i class="source_code"></i>
+                      소스코드 복사
+                    </button>
+                  </li>
+                  <li>
+                    <button type="button" class="tab_btn link">
+                      <i class="link"></i>
+                      링크 복사
+                    </button>
+                  </li>
+                </ul>
+                <div class="tab_cont">
+                  <!-- 소스코드 복사 -->
+                  <div class="tab_cont_box on">
+                    <!-- size_select -->
+                    <div class="size_wrap">
+                      <dl class="size_select">
+                        <dt>사이즈 선택</dt>
+                        <dd>
+                          <select name="" id="">
+                            <option value="">1000 x 50</option>
+                            <option value="">960 x 540</option>
+                            <option value="">300 x 600</option>
+                            <option value="">600 x 1,200</option>
+                          </select>
+                        </dd>
+                      </dl>
+                      <div class="source_code">
+                        코드영역 입니다 코드영역 입니다 코드영역 입니다 코드영역
+                        입니다 코드영역 입니다 코드영역 입니다
+                      </div>
+                    </div>
+                    <div class="original_download_wrap">
+                      <p>원본 다운로드</p>
+                      <div class="btn_wrap">
+                        <button class="blog">
+                          <i></i>
+                          <span>블로그</span>
+                        </button>
+                        <button class="youtube">
+                          <i></i>
+                          <span>유튜브</span>
+                        </button>
+                        <button class="instagram">
+                          <i></i>
+                          <span>인스타그램</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- 링크 복사 -->
+                  <div class="tab_cont_box">
+                    <div class="link_wrap">
+                      <div class="source_code">
+                        코드영역 입니다 코드영역 입니다 코드영역 입니다 코드영역
+                        입니다 코드영역 입니다 코드영역 입니다
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- pop_share_code_link -->
+    <div class="pop_wrap pop_contents_delete_wrap">
+      <div class="dim"></div>
+      <div class="pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <p>콘텐츠를 삭제하시겠어요?</p>
+              <div class="btn_wrap">
+                <button class="cancel">취소</button>
+                <button class="check">확인</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      $(function () {
+        $(".spcae_detail_call").on("click", function () {
+          $(".pop_space_detail").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".pop_space_detail .pop_close").on("click", function () {
+          $(".pop_space_detail").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        $(".renewal_pop_btn.share").on("click", function () {
+          $(".pop_share_code_link").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(".pop_share_code_link .pop_close").on("click", function () {
+          $(".pop_share_code_link").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        $(".pop_share_code_link .copy_tab .tab_btn").on("click", function () {
+          let idx = $(this).parents("li").index();
+          $(".pop_share_code_link .copy_tab .tab_btn").removeClass("on");
+          $(this).addClass("on");
+          $(".pop_share_code_link .tab_cont_box")
+            .eq(idx)
+            .addClass("on")
+            .siblings()
+            .removeClass("on");
+        });
+
+        $(".renewal_pop_btn.heart").on("click", function () {
+          $(this).toggleClass("active");
+        });
+
+        $(".comment_like_icon.heart").on("click", function () {
+          $(this).toggleClass("active");
+        });
+
+        $(".pop_space_detail .meatballs_wrap .meatballs_icon").on({
+          mouseover: function () {
+            $(".pop_space_detail .meatballs_wrap").addClass("active");
+          },
+          mouseout: function () {
+            $(".pop_space_detail .meatballs_wrap").removeClass("active");
+          },
+        });
+
+        // others_menu도 같은 방법으로 사용가능합니다.
+        $(".pop_space_detail .meatballs_wrap").on("click", function () {
+          $(".pop_space_detail .meatballs_wrap .menu_wrap.my_menu").toggleClass(
+            "on"
+          );
+        });
+
+        $(".pop_contents_delete_wrap .check").on("click", function() {
+          $(this).parents('.pop_wrap').removeClass('show');
+
+          if (true) deleteToastPop();
+        })
+
+        $(".pop_space_detail .meatballs_wrap .menu_wrap ul li.delete").on(
+          "click",
+          function () {
+            $(
+              ".pop_space_detail .meatballs_wrap .menu_wrap.my_menu"
+            ).removeClass("on");
+            $(".pop_contents_delete_wrap").addClass("show");
+          }
+        );
+
+        // 연간 상품 결제 버튼 클릭시
+        $(".pop_space_detail .meatballs_wrap .menu_wrap ul li.profile_pin").on(
+          "click",
+          function () {
+            if(true) pinToastPop();
+          }
+        );
+
+        function pinToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green"><p>나의 프로필 상단에 고정되었습니다</p></div>';
+          $("#container").append(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal").remove();
+          }, 3000);
+        }
+
+        function deleteToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal red"><p>콘텐츠가 삭제 되었습니다</p></div>';
+          $("#container").append(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal").remove();
+          }, 3000);
+        }
+
+        function commentPostToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal submit_complete"><p>등록되었습니다</p></div>';
+          $(".pop_space_detail .pop_comment_wrapper > .pop_comment_wrap").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal").remove();
+          }, 3000);
+        }
+
+        $(
+          ".pop_space_detail .pop_comment_wrapper .pop_comment_wrap .submit_area .comment_post"
+        ).on("click", function () {
+          if (true) commentPostToastPop();
+        });
+      });
+    </script>
+
+  </body>
+</html>

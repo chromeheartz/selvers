@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.css" />
+    <script src="../assets/js/jquery-1.12.4.min.js"></script>
+
+    <script src="../assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <title>SELVERS</title>
+  </head>
+  <body>
+    <div id="wrap" class="page_main">
+      <div id="createDetailContainer">
+        <!-- S: MENU -->
+        <div class="icon_exit_wrap">
+          <button type="button">다음</button>
+          <i
+            ><img
+              src="../assets/images/renewal/renewal-create-detail-exit-icon.png"
+              alt="hambuger icon"
+          /></i>
+        </div>
+        <div class="icon_cube_adjust_wrap">
+          <i
+            ><img
+              src="../assets/images/renewal/renewal-create-detail-cube-icon.png"
+              alt="hambuger icon"
+          /></i>
+        </div>
+        <div class="icon_object_wrap">
+          <i
+            ><img
+              src="../assets/images/renewal/renewal-create-detail-object-icon.png"
+              alt="hambuger icon"
+          /></i>
+        </div>
+        <div class="menu_title_wrap toast_wrap">
+          <div class="menu_title">
+            <i
+              ><img
+                src="../assets/images/renewal/renewal-cube-title-icon.png"
+                alt="cube title icon"
+            /></i>
+            <p>큐브 생성 및 이동</p>
+          </div>
+          <div class="btn_wrap">
+            <button type="button" id="new_cube_toast_call">06_02-1</button>
+            <button type="button" id="remove_cube_toast_call">06_02-2</button>
+            <button type="button" id="cube_user_location_toast_call">06_02-3</button>
+            <button type="button" id="change_type_toast_call">06_03-1</button>
+            <button type="button" id="image_location_toast_call">06_04-2</button>
+            <button type="button" id="video_location_toast_call">06_05-2</button>
+            <button type="button" id="sticker_location_toast_call">06_07-2</button>
+            <button type="button" id="link_location_toast_call">06_08-2</button>
+            <button type="button" id="embede_location_toast_call">06_09-3</button>
+            <button type="button" id="exhibition_location_toast_call">06_10-2</button>
+            <button type="button" id="space_location_toast_call">06_11-2</button>
+            <button type="button" id="space_move_location_toast_call">06_12-2</button>
+            <button type="button" id="tts_location_toast_call">06_13-2</button>
+            <button type="button" id="text_location_toast_call">06_14-2</button>
+            <button type="button" id="light_toast_call">06_15-2</button>
+            <button type="button" id="wall_light_toast_call">06_16-2</button>
+            <button type="button" id="threed_toast_call">06_17-2</button>
+            <button type="button" id="threed_thing_toast_call">06_18-2</button>
+            
+            
+
+            <button type="button" id="remove_cube_toast_call"></button>
+            
+          </div>
+        </div>
+
+        <!-- E: MENU -->
+      </div>
+    </div>
+
+    <script>
+      $(function () {
+
+        // S:::: 이미지 변경 토스트
+
+        // S: 06_02-1
+        function newCubeToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green new_cube_toast"><p>벽면을 클릭하여 새로운 큐브를 생성하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.new_cube_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#new_cube_toast_call"
+        ).on("click", function () {
+          if (true) newCubeToastPop();
+        });
+        // E: 06_02-1
+
+
+        // S: 06_02-2
+        function removeCubeToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green remove_cube_toast"><p>제거하려는 큐브의 바닥면을 클릭하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.remove_cube_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#remove_cube_toast_call"
+        ).on("click", function () {
+          if (true) removeCubeToastPop();
+        });
+        // E: 06_02-2
+
+        // S: 06_02-3
+        function cubeUserLocationToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green cube_user_location_toast"><p>큐브 바닥을 클릭하여 사용자 위치를 이동하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.cube_user_location_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#cube_user_location_toast_call"
+        ).on("click", function () {
+          if (true) cubeUserLocationToastPop();
+        });
+        // E: 06_02-3
+
+        // S: 06_03-1
+        function changeTypeToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green change_type_toast"><p>타입변경할 벽면을 클릭하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.change_type_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#change_type_toast_call"
+        ).on("click", function () {
+          if (true) changeTypeToastPop();
+        });
+        // E: 06_03-1
+
+        // S: 06_04-2
+        function imageLocationToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green image_location_toast"><p>원하는 사진 위치를 클릭하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.image_location_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#image_location_toast_call"
+        ).on("click", function () {
+          if (true) imageLocationToastPop();
+        });
+        // E: 06_04-2
+
+        // S: 06_05-2
+        function videoLocationToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green video_location_toast"><p>원하는 동영상 위치를 클릭하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.video_location_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#video_location_toast_call"
+        ).on("click", function () {
+          if (true) videoLocationToastPop();
+        });
+        // E: 06_05-2
+
+        // S: 06_07-2
+        function stickerLocationToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green sticker_location_toast"><p>원하는 스티커 위치를 클릭하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.sticker_location_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#sticker_location_toast_call"
+        ).on("click", function () {
+          if (true) stickerLocationToastPop();
+        });
+        // E: 06_07-2
+
+        // S: 06_08-2
+        function linkLocationToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green link_location_toast"><p>원하는 링크 위치를 클릭하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.link_location_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#link_location_toast_call"
+        ).on("click", function () {
+          if (true) linkLocationToastPop();
+        });
+        // E: 06_08-2
+
+        // S: 06_09-3
+        function embedeLocationToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green embede_location_toast"><p>원하는 임베드 위치를 클릭하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.embede_location_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#embede_location_toast_call"
+        ).on("click", function () {
+          if (true) embedeLocationToastPop();
+        });
+        // E: 06_09-3
+
+        // S: 06_10-2
+        function exhibitionLocationToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green exhibition_location_toast"><p>원하는 전시 위치를 클릭하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.exhibition_location_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#exhibition_location_toast_call"
+        ).on("click", function () {
+          if (true) exhibitionLocationToastPop();
+        });
+        // E: 06_10-2
+
+        // S: 06_11-2
+        function spaceLocationToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green space_location_toast"><p>원하는 공간 연결 위치를 클릭하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.space_location_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#space_location_toast_call"
+        ).on("click", function () {
+          if (true) spaceLocationToastPop();
+        });
+        // E: 06_11-2
+
+        // S: 06_12-2
+        function spaceMoveLocationToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green space_move_location_toast"><p>원하는 공간 이동 위치를 클릭하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.space_move_location_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#space_move_location_toast_call"
+        ).on("click", function () {
+          if (true) spaceMoveLocationToastPop();
+        });
+        // E: 06_12-2
+
+        // S: 06_13-2
+        function ttsLocationToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green tts_location_toast"><p>원하는 TTS 위치를 클릭하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.tts_location_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#tts_location_toast_call"
+        ).on("click", function () {
+          if (true) ttsLocationToastPop();
+        });
+        // E: 06_13-2
+
+        // S: 06_14-2
+        function textLocationToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green text_location_toast"><p>원하는 텍스트 위치를 클릭하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.text_location_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#text_location_toast_call"
+        ).on("click", function () {
+          if (true) textLocationToastPop();
+        });
+        // E: 06_14-2
+
+        // S: 06_15-2
+        function lightToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green light_toast"><p>원하는 천장을 클릭하여 공간 조명을 생성하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.light_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#light_toast_call"
+        ).on("click", function () {
+          if (true) lightToastPop();
+        });
+        // E: 06_15-2
+
+        // S: 06_16-2
+        function wallLightToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green wall_light_toast"><p>원하는 벽면을 클릭하여 공간 조명을 생성하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.wall_light_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#wall_light_toast_call"
+        ).on("click", function () {
+          if (true) wallLightToastPop();
+        });
+        // E: 06_16-2
+
+        // S: 06_17-2
+        function threeDToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green threed_toast"><p>원하는 벽면을 클릭하여 3D 텍스트를 생성하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.threed_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#threed_toast_call"
+        ).on("click", function () {
+          if (true) threeDToastPop();
+        });
+        // E: 06_17-2
+
+        // S: 06_18-2
+        function threeDThingToastPop() {
+          let popEl =
+            '<div class="toast_pop renewal green threed_thing_toast"><p>원하는 바닥을 클릭하여 3D 물체를 생성하세요</p></div>';
+          $("#createDetailContainer").prepend(popEl);
+          setTimeout(function () {
+            $(".toast_pop.renewal.threed_thing_toast").remove();
+          }, 3000);
+        }
+
+        $(
+          "#threed_thing_toast_call"
+        ).on("click", function () {
+          if (true) threeDThingToastPop();
+        });
+        // E: 06_18-2
+
+        
+
+        
+        // E:::: 이미지 변경 토스트
+        
+      });
+    </script>
+  </body>
+</html>
