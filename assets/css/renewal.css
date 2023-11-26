@@ -1059,7 +1059,7 @@
 
 .pop_space_detail .renewal_comment_wrap .user_info_wrap .user_box {
   display: flex;
-  align-items: cetner;
+  align-items: center;
 }
 
 .pop_space_detail
@@ -1137,6 +1137,14 @@
   align-items: center;
 }
 
+.pop_space_detail .pop_comment_wrapper .pop_comment_wrap .comment_area {
+  width: calc(100% - 100px);
+}
+
+.pop_space_detail .pop_comment_wrapper .pop_comment_wrap .reply_area {
+  width: calc(100% - 190px);
+}
+
 .pop_space_detail .pop_comment_wrapper .pop_comment_wrap .user_input_area > i {
   margin-right: 10px;
 }
@@ -1150,6 +1158,7 @@
   border: 0 none;
   padding: 0;
   height: 40px;
+  flex: 1;
 }
 
 .pop_space_detail .pop_comment_wrapper .pop_comment_wrap .submit_complete {

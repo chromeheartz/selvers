@@ -650,3 +650,738 @@
   /* E: SpaceCreate */
 
 }
+
+
+/* **************************** 공간 상세 **************************8 */
+@media all and (max-width: 640px) {
+  .pop_space_detail .renewal_pop_box {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    max-height: unset;
+    transform: unset;
+    left: 0;
+    top: 0;
+  }
+
+  .pop_space_detail .pop_close {
+    width: 24px;
+    height: 19px;
+    background: url('../../assets/images/renewal/back-icon.png') no-repeat center / cover;
+    right: unset;
+    left: 18px;
+    top: 20px;
+  }
+
+  .pop_space_detail .pop_cont .pop_space {
+    height: 109.375vw;
+  }
+
+  .pop_space_detail .pop_cont .pop_space .music-icon-wrap {
+    left: 18px;
+    bottom: 20px;
+    padding: 9px 18px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .pop_comment_wrap .submit_area button {
+    height: 40px;
+    border-radius: 20px;
+    font-size: 12px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list .recomment_wrap .recomment_info_msg {
+    min-width: unset;
+    font-size: 13px;
+    padding-right: 10px;
+    margin-right: 10px;
+    position: relative;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list .recomment_wrap .recomment_info_msg::after {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 20px;
+    background-color: #9a9a9a;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .pop_space_detail .pop_comment_wrapper .pop_comment_wrap .user_input_area input {
+    font-size: 13px;
+    color: #000;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list .recomment_wrap .recomment_info_msg span {
+    display: none;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list .recomment_wrap .comment_btn_wrap span {
+    font-size: 13px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box {
+    padding: 24px 0;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box .comment_list_body .info_wrap p {
+    font-size: 13px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box .comment_list_body .info_wrap span {
+    font-size: 12px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box .comment_list_body .text_wrap {
+    font-size: 13px;
+    line-height: 17px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box .comment_list_body .btn_wrap {
+    font-size: 12px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box .comment_list_body .view_more {
+    width: auto;
+    height: 40px;
+    padding: 0 20px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list .recomment_wrap {
+    padding-left: 0;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list .recomment_wrap .comment_btn_wrap {
+    padding-left: 63px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list .recomment_wrap .recomment_list {
+    padding-left: 63px;
+  }
+
+  .pop_space_detail .renewal_comment_wrap .user_info_wrap {
+    margin-bottom: 23px;
+  }
+
+  .pop_space_detail .renewal_comment_wrap .user_info_wrap .user_box .user_wrap p {
+    font-size: 13px;
+  }
+
+  .pop_space_detail .renewal_comment_wrap .user_info_wrap .user_box .user_wrap span {
+    display: block;
+    font-size: 13px;
+  }
+
+  .renewal_pop_btn {
+    width: 80px;
+    height: 40px;
+    padding: 0;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .renewal_pop_btn > span {
+    font-size: 12px;
+  }
+
+  .pop_space_detail .renewal_comment_wrap .user_info_wrap .btn_box .meatballs_wrap .meatballs_icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .pop_space_detail .pop_cont .pop_space .music-icon-wrap i img {
+    width: 10px;
+  }
+
+  .pop_space_detail .pop_cont .pop_space .music-icon-wrap p {
+    font-size: 13px;
+  }
+
+  .pop_space_detail .renewal_comment_wrap {
+    padding: 18px;
+  }
+
+  .pop_share_code_link .pop_box {
+    max-width: calc(100% - 80px);
+    height: auto;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+  }
+
+  .pop_share_code_link .pop_box .pop_close {
+    width: 10px;
+    height: 10px;
+    background-size: cover;
+    top: 10px;
+    right: 10px;
+  }
+
+  .pop_share_code_link .pop_box .pop_body_in {
+    min-height: unset;
+    padding: 30px 20px;
+  }
+
+  .pop_space_detail .comment_more_btn_wrapper {
+    margin-top: 24px;
+  }
+
+  .pop_space_detail .comment_more_btn_wrapper .comment_more_btn {
+    font-size: 12px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .pop_comment_wrap .submit_complete {
+    padding: 13px 30px;
+    border-radius: 20px;
+    top: 7px;
+  }
+
+  .toast_pop.renewal p {
+    font-size: 13px;
+  }
+
+  .pop_space_detail .meatballs_wrap .menu_wrap {
+    width: 153px;
+  }
+
+  .pop_space_detail .meatballs_wrap .menu_wrap ul li span {
+    font-size: 12px;
+  }
+
+  .pop_contents_delete_wrap .pop_box {
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    max-width: 280px;
+  }
+
+  .pop_contents_delete_wrap .pop_box .pop_body_in {
+    min-height: unset;
+    padding: 23px 16px;
+  }
+
+  .pop_contents_delete_wrap .pop_cont > p {
+    margin-bottom: 15px;
+  }
+
+  .pop_contents_delete_wrap .btn_wrap button {
+    font-size: 12px;
+    height: 40px;
+    border-radius: 20px;
+  }
+}
+
+@media all and (max-width: 480px) {
+
+  .pop_space_detail .pop_cont .pop_space .music-icon-wrap p {
+    font-size: 12px;
+  }
+
+  .user_default_icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pop_space_detail .renewal_comment_wrap .user_info_wrap .user_box .user_wrap p {
+    font-size: 12px;
+  }
+
+  .pop_space_detail .renewal_comment_wrap .user_info_wrap .user_box .user_wrap span {
+    font-size: 12px;
+  }
+
+  .pop_space_detail .renewal_comment_wrap .user_info_wrap .btn_box {
+    gap: 5px;
+  }
+
+  .renewal_pop_btn {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+  }
+
+  .renewal_pop_btn > i {
+    margin-right: 5px;
+  }
+
+  .renewal_pop_btn.heart > i {
+    width: 15px;
+    height: 14px;
+  }
+
+  .renewal_pop_btn.comment > i {
+    width: 15px;
+    height: 14px;
+  }
+
+  .renewal_pop_btn.share > i {
+    width: 15px;
+    height: 12px;
+  }
+
+  .renewal_pop_btn > span {
+    font-size: 11px;
+  }
+
+  .pop_space_detail .renewal_comment_wrap .user_info_wrap .btn_box .meatballs_wrap .meatballs_icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .pop_comment_wrap {
+    padding: 5px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .pop_comment_wrap .user_input_area input {
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .pop_comment_wrap .submit_area button {
+    width: 60px;
+    height: 30px;
+    border-radius: 15px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .pop_comment_wrap .reply_area {
+    width: calc(100% - 140px);
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list .recomment_wrap .recomment_info_msg {
+    font-size: 12px;
+    margin-right: 5px;
+    padding-right: 5px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list .recomment_wrap .recomment_info_msg::after {
+    height: 15px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list .recomment_wrap .comment_btn_wrap {
+    padding-left: 30px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list .recomment_wrap .recomment_list {
+    padding-left: 30px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box {
+    padding: 15px 0;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box .comment_list_body .info_wrap {
+    gap: 10px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box .comment_list_body .info_wrap p {
+    font-size: 12px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box .comment_list_body .info_wrap span {
+    font-size: 11px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box .comment_like_icon {
+    min-width: unset;
+    width: 15px;
+    height: 14px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box .comment_list_body .text_wrap {
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 15px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box .comment_list_body .btn_wrap {
+    font-size: 11px;
+    gap: 10px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list .recomment_wrap .comment_btn_wrap span {
+    font-size: 12px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list .recomment_wrap .comment_btn_wrap i {
+    width: 15px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .comment_list > li .comment_box .comment_list_body .view_more {
+    height: 30px;
+    font-size: 11px;
+    padding: 0 15px;
+    margin-bottom: 15px;
+  }
+
+  .pop_space_detail .comment_more_btn_wrapper {
+    margin-top: 15px;
+  }
+
+  .pop_space_detail .comment_more_btn_wrapper .comment_more_btn {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    font-size: 11px;
+  }
+
+  .pop_space_detail .pop_comment_wrapper .pop_comment_wrap .submit_complete {
+    padding: 0 15px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 15px;
+    top: 5px;
+  }
+
+  .toast_pop.renewal p {
+    font-size: 12px;
+  }
+
+  .pop_contents_delete_wrap .pop_box .pop_body_in {
+    padding: 20px;
+  }
+
+  .pop_contents_delete_wrap .pop_cont > p {
+    font-size: 13px;
+  }
+
+  .pop_contents_delete_wrap .btn_wrap {
+    gap: 10px;
+  }
+
+  .pop_contents_delete_wrap .btn_wrap button {
+    height: 30px;
+    border-radius: 15px;
+  }
+
+  .pop_share_code_link .tab_btn {
+    height: 30px;
+    font-size: 13px;
+    border-radius: 15px;
+  }
+
+  .pop_share_code_link .tab_btn.on {
+    font-size: 13px;
+  }
+
+  .pop_share_code_link .tab_btn i {
+    width: 13px;
+    height: 13px;
+    margin-right: 5px;
+  }
+
+  .pop_share_code_link .tab_cont_box .size_wrap {
+    padding: 15px;
+  }
+
+  .pop_share_code_link .tab_cont_box .size_wrap .size_select dt {
+    font-size: 12px;
+  }
+
+  .pop_share_code_link .tab_cont_box .size_wrap .size_select dd select {
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    background-size: 10px;
+    padding: 0 10px;
+  }
+
+  .pop_share_code_link .tab_cont_box .source_code {
+    font-size: 12px;
+  }
+
+  .pop_share_code_link .tab_cont_box .original_download_wrap {
+    padding: 15px;
+  }
+
+  .pop_share_code_link .tab_cont_box .original_download_wrap p {
+    font-size: 12px;
+  }
+
+  .pop_share_code_link .tab_cont_box .original_download_wrap .btn_wrap button {
+    font-size: 12px;
+  }
+
+  .pop_share_code_link .tab_cont_box .original_download_wrap .btn_wrap button.instagram i {
+    width: 12px;
+    height: 12px;
+  }
+
+  .pop_share_code_link .tab_cont_box .original_download_wrap .btn_wrap button.youtube i {
+    width: 15px;
+    height: 11.5px;
+  }
+
+  .pop_share_code_link .tab_cont_box .original_download_wrap .btn_wrap button.blog i {
+    width: 15px;
+    height: 12.75px;
+  }
+
+  .pop_share_code_link .tab_cont_box .link_wrap {
+    padding: 15px;
+  }
+
+  .pop_space_detail .pop_close {
+    width: 20px;
+    height: 15px;
+  }
+}
+
+
+/* ******************************************* 공간 정보 바꾸기 ******************************************* */
+@media all and (max-width: 640px) {
+  .pop_space_change .renewal_pop_box {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+    max-height: unset;
+    overflow-y: auto;
+  }
+
+  .pop_space_change .pop_change {
+    display: block;
+  }
+
+  .pop_space_change .iframe_wrap {
+    width: 100%;
+    min-height: unset;
+    height: 109.375vw;
+  }
+
+  .pop_space_change .pop_cont .pop_close {
+    display: none;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap {
+    padding: 30px 18px 40px;
+    min-width: unset;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .input_wrap dl:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .input_wrap dl dt {
+    font-size: 13px;
+    margin-bottom: 7px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .input_wrap dl dt .desc {
+    font-size: 11px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .input_wrap dl dd input, .pop_space_change .pop_change .pop_change_post_wrap .input_wrap dl dd textarea {
+    font-size: 12px;
+    padding: 0 15px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .input_wrap dl dd textarea {
+    padding: 15px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .input_wrap dl dd .choice_cover_wrap {
+    top: 8px;
+    right: 8px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .input_wrap dl dd .choice_cover_wrap span {
+    font-size: 12px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .input_wrap dl dd .radio_wrap label {
+    font-size: 12px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .input_wrap dl.radio_dl dt {
+    margin-bottom: 12px;
+  }
+  
+  .pop_space_change .pop_change .pop_change_post_wrap .watch_contents > p {
+    font-size: 13px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .watch_contents .watch_contents_btn {
+    width: 118px;
+    height: 40px;
+    border-radius: 20px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .watch_contents .watch_contents_btn .text_wrap > span {
+    font-size: 12px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .btn_wrap {
+    margin-top: 250px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .btn_wrap button:nth-child(n + 3) {
+    display: none;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .btn_wrap button {
+    font-size: 13px;
+    width: calc(50% - 4px);
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .watch_contents .menu_wrap {
+    padding: 15px;
+    min-width: 280px;
+    top: calc(100% + 6px);
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .watch_contents .menu_wrap > p {
+    font-size: 13px;
+    margin-bottom: 15px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .watch_contents .menu_wrap li {
+    font-size: 12px;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .watch_contents .menu_wrap li:not(:last-child) {
+    margin-bottom: 6px;
+  }
+
+  .pop_cover_choice .renewal_pop_box {
+    width: calc(100% - 36px);
+  }
+
+  .pop_cover_choice .pop_cont {
+    height: auto;
+    padding: 68px 32px 102px;
+  }
+
+  .pop_cover_choice .pop_cont .cover_rec {
+    width: 100%;
+    height: 61.719vw;
+    position: unset;
+    transform: unset;
+  }
+
+  .pop_cover_choice .pop_cont .btn_wrap {
+    bottom: 36px;
+  }
+
+  .pop_cover_choice .pop_cont .btn_wrap {
+    width: 100%;
+    padding: 0 32px;
+  }
+
+  .pop_cover_choice .pop_cont .btn_wrap button {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  .pop_cover_choice .pop_cont .btn_wrap button.load i {
+    width: 15px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .pop_space_change .pop_change .pop_change_post_wrap .btn_wrap {
+    margin-top: 195px;
+  }
+}
+
+/* ******************************************* 공간 만들기 ******************************************* */
+.pop_space_create .renewal_pop_box .more_btn {
+  display: none;
+}
+@media all and (max-width: 640px) {
+  .pop_space_create .renewal_pop_box {
+    width: 100%;
+    height: 100vh;
+    max-height: unset;
+    border-radius: 0;
+    padding: 32px 18px 44px;
+    overflow-y: auto;
+  }
+
+  .pop_space_create .renewal_pop_box .pop_title {
+    margin-bottom: 70px;
+  }
+
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper {
+    max-height: unset;
+  }
+
+  .pop_space_create .renewal_pop_box .pop_cont_wrapper .pop_cont_wrap {
+    overflow-y: unset;
+  }
+
+  .pop_space_create .renewal_pop_box .more_btn {
+    display: block;
+    width: 144px;
+    height: 42px;
+    border-radius: 21px;
+    background-color: #7e73eb;
+    font-size: 14px;
+    color: #fff;
+    margin: 40px auto 0;
+  } 
+}
+
+/* ******************************************* 검색 ******************************************* */
+@media all and (max-width: 640px) {
+  .renewal_card_wrapper .renewal_card_list {
+    gap: 8px;
+  }
+  .renewal_card_wrapper .renewal_card_list li {
+    width: calc(100% / 3 - 5.33333333px);
+  }
+
+  .renewal_card_wrapper .renewal_card_list li:nth-child(3) {
+    margin-top: 0;
+  }
+
+  .renewal_card_wrapper .renewal_card_list li:nth-child(n + 4) {
+    margin-top: 20px;
+  }
+
+  .renewal_card_wrapper .renewal_card_list li > i {
+    height: 45.938vw;
+  }
+
+  .renewal_card_wrapper .renewal_card_list li > i > span {
+    font-size: 15px;
+    line-height: 1;
+    bottom: 15px;
+    left: 15px;
+  }
+}
+
+@media all and (max-width: 480px) {
+  .renewal_card_wrapper .renewal_card_list li > i > span {
+    font-size: 13px;
+    left: 13px;
+    bottom: 13px;
+  }
+
+  .renewal_card_wrapper .renewal_card_list li {
+    width: calc(50% - 4px);
+  }
+
+  .renewal_card_wrapper .renewal_card_list li:nth-child(3) {
+    margin-top: 10px;
+  }
+
+  .renewal_card_wrapper .renewal_card_list li:nth-child(n + 3) {
+    margin-top: 10px;
+  }
+
+  .renewal_card_wrapper .renewal_card_list li > i {
+    height: 63.938vw;
+  }
+}
