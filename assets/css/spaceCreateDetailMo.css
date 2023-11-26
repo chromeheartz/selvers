@@ -1,0 +1,953 @@
+.mo_element {
+  display: none;
+}
+.interactive_sticker_modal .btn_wrap.mo_btn_wrap {
+  display: none;
+}
+
+.interactive_sticker_modal .mo_viewmore_wrap {
+  display: none;
+}
+.interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap {
+  flex-direction: row-reverse;
+}
+
+@media all and (max-width: 960px) {
+  .space_create_modal .col-5-list-wrap li {
+    width: calc(25% - 30px / 4);
+  }
+  .space_create_modal .col-5-list-wrap li i {
+    height: 20.625vw;
+  }
+  .space_create_modal.type_change_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap {
+    height: 20.625vw;
+  }
+  .space_create_modal.type_change_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap > span {
+    font-size: 14px;
+    text-align: center;
+  }
+  .space_create_modal.image_change_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap {
+    height: 20.625vw;
+  }
+  .space_create_modal.image_change_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap > span {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .interactive_sticker_modal .btn_wrap {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .interactive_space_link_modal .space-link-col-5-list {
+    gap: 10px;
+    background-color: transparent;
+  }
+  .interactive_space_link_modal .space-link-col-5-list li {
+    width: calc(25% - 30px / 4);
+  }
+}
+
+@media all and (max-width: 768px) {
+  .pc_element {
+    display: none !important;
+  }
+  .mo_element {
+    display: block !important;
+  }
+  #createDetailContainer .cube_adjust_wrap {
+    width: 100vw;
+    height: 55vh;
+    top: unset;
+    left: 0;
+    bottom: 0;
+    overflow-y: scroll;
+  }
+  #createDetailContainer .cube_adjust_wrap .btn_wrap {
+    margin-top: 20px;
+  }
+  #createDetailContainer .object_list_wrap {
+    width: 100vw;
+    height: auto;
+    top: unset;
+    right: 0;
+    bottom: 0;
+  }
+  #createDetailContainer .icon_exit_wrap {
+    width: fit-content;
+  }
+  #createDetailContainer .icon_exit_wrap.mo_element {
+    right: unset;
+    left: 20px;
+  }
+  .space_create_modal .renewal_pop_box {
+    padding: 30px;
+  }
+  .space_create_modal .space_create_modal_title {
+    font-size: 20px;
+    margin-bottom: 24px;
+  }
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2_menu.image + .dep3 .image_change_list li {
+    width: calc(25% - 18px / 4);
+  }
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2_menu.image + .dep3 .image_change_list li:nth-child(3n) {
+    margin-right: 6px;
+  }
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2_menu.image + .dep3 .image_change_list li:nth-child(4n) {
+    margin-right: 0;
+  }
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2_menu.image + .dep3 .image_change_list li i {
+    height: 22.135vw;
+    border-radius: 4px;
+  }
+  
+  .space_create_modal.interactive_image_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap {
+    height: 20.625vw;
+  }
+  .space_create_modal.interactive_image_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap span{
+    text-align: center;
+  }
+  .interactive_video_modal .video-col-4-list {
+    gap: 10px;
+  }
+
+  .interactive_video_modal .video-col-4-list li {
+    width: calc(33.333% - 20px / 3);
+  }
+  .interactive_video_modal .video-col-4-list li i {
+    height: 22.135vw;
+  }
+
+  .interactive_music_modal .music_complete_wrap {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+  .interactive_music_modal .music_complete_wrap .btn_wrap {
+    width: 100%;
+    gap: 10px;
+  }
+  .interactive_music_modal .music_complete_wrap .btn_wrap button {
+    width: calc(50% - 5px);
+  }
+
+  .interactive_space_link_modal .space-link-col-5-list li {
+    width: calc(33.3333% - 20px / 3);
+  }
+
+  .space_create_modal.interactive_move_change_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap > span{
+    text-align: center;
+  }
+
+  .space_create_modal.objects_light_modal .renewal_pop_box {
+    padding: 16px;
+  }
+  .objects_light_modal .objects_light_head_wrap .thumb_wrap i {
+    text-align: center;
+  }
+  .space_create_modal.objects_wall_light_modal .renewal_pop_box {
+    padding: 16px;
+  }
+  .objects_wall_light_modal .objects_wall_light_head_wrap .thumb_wrap i {
+    text-align: center;
+  }
+
+  .space_create_modal.objects_threed_thing_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap span{
+    text-align: center;
+  }
+  .space_create_modal.objects_threed_thing_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap {
+    height: 20.625vw;
+  }
+
+}
+
+@media all and (max-width: 640px) {
+  #createDetailContainer .icon_exit_wrap.mo_element i img{
+    width: 16px;
+    height: 17px;
+  }
+  #createDetailContainer > .icon_exit_wrap {
+    height: 50px;
+    align-items: center;
+  }
+  #createDetailContainer > .icon_exit_wrap button {
+    font-size: 14px;
+  }
+  #createDetailContainer > .menu_title_wrap {
+    top: 78px;
+    width: calc(100% - 40px);
+  }
+  #createDetailContainer > .menu_title_wrap .menu_title {
+    background-color: rgba(51, 51, 51, 0.7);
+    width: 100%;
+  }
+  #createDetailContainer > .menu_title_wrap .menu_title p {
+    font-size: 16px;
+  }
+  #createDetailContainer > .menu_title_wrap .btn_wrap button{
+    font-size: 14px;
+    height: 40px;
+    width: calc(25% - 21px / 4);
+  }
+
+  .interactive_sticker_modal .btn_wrap {
+    justify-content: flex-start;
+    gap: 10px;
+  }
+  .interactive_sticker_modal .btn_wrap button {
+    width: calc(20% - 40px / 5);
+  }
+
+  .interactive_space_link_modal .space-link-col-5-list li {
+    width: calc(50% - 5px);
+  }
+
+  .objects_light_modal .objects_light_head_wrap {
+    flex-direction: column;
+  }
+  .objects_light_modal .objects_light_head_wrap .light_color_wrap {
+    width: 100%;
+  }
+  .objects_light_modal .threed_list_wrap ul {
+    gap: 10px;
+  }
+  .objects_light_modal .threed_list_wrap ul li{
+    width: calc(25% - 30px / 4);
+  }
+
+  .objects_wall_light_modal .objects_wall_light_head_wrap {
+    flex-direction: column;
+  }
+  .objects_wall_light_modal .objects_wall_light_head_wrap .light_color_wrap{
+    width: 100%;
+  }
+  .objects_wall_light_modal .threed_list_wrap ul {
+    gap: 10px;
+  }
+  .objects_wall_light_modal .threed_list_wrap ul li {
+    width: calc(25% - 30px / 4);
+  }
+}
+
+@media all and (max-width: 500px) {
+  .space_create_modal .renewal_pop_box {
+    padding: 16px;
+  }
+
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep1 > span {
+    font-size: 16px;
+  }
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2 .dep2_list li .dep2_menu .dep2_flex_wrap > span {
+    font-size: 14px;
+  }
+
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2_menu.image + .dep3 .image_change_list li {
+    margin-right: 10px;
+    width: calc(33.333% - 20px / 3);
+  }
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2_menu.image + .dep3 .image_change_list li:nth-child(3n) {
+    margin-right: 0;
+  }
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2_menu.image + .dep3 .image_change_list li:nth-child(4n) {
+    margin-right: 10px;
+  }
+  
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2_menu.image + .dep3 .image_change_list li i {
+    height: 27vw;
+  }
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2_menu.image + .dep3 .image_change_list li > span {
+    font-size: 13px;
+  }
+
+  #createDetailContainer .cube_adjust_wrap .btn_wrap button {
+    font-size: 14px;
+  }
+
+  .object_tooltip {
+    top: 78px;
+    background-color: rgba(126, 115, 235, 0.7);
+    padding: 24px 30px 30px;
+  }
+  .object_tooltip .title_wrap h6 {
+    font-size: 16px;
+  }
+  .object_tooltip > ul li:first-child {
+    margin-bottom: 16px;
+  }
+  .object_tooltip > ul li p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .object_tooltip > ul li p:last-child {
+    font-size: 12px;
+  }
+
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep2 .dep2_list > li {
+    overflow-y: scroll;
+  }
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li.interactive .interactive_list_wrap {
+    max-height: 300px;
+  }
+
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li.interactive .interactive_list_wrap li span {
+    font-size: 14px;
+  }
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li.interactive .interactive_list_wrap li {
+    height: 29.200vw;
+  }
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li.object .interactive_list_wrap li span {
+    font-size: 14px;
+  }
+  #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li.object .objects_list_wrap li {
+    height: 29.200vw;
+  }
+  
+  #createDetailContainer .toast_pop.renewal {
+    top: 200px;
+    width: calc(100% - 40px);
+    text-align: center;
+  }
+
+  #createDetailContainer .object_list_wrap > .title p {
+    font-size: 16px;
+  }
+
+  #createDetailContainer .object_list_wrap .object_create_remove_list li span {
+    font-size: 14px;
+  }
+
+  #createDetailContainer .object_list_wrap .object_create_remove_list li {
+    padding: 0 15px;
+  }
+  #createDetailContainer .object_list_wrap .object_create_remove_list li .btn_wrap button {
+    font-size: 14px;
+  }
+
+  /* S ::: 타입 변경 모달 ::: S */
+  .space_create_modal .renewal_pop_box {
+    background-color: rgba(0, 0, 0, 0.8);
+    max-height: 50vh;
+  }
+  .pop_wrap.space_create_modal.type_change_modal {
+    top: unset;
+    bottom: 80px;
+    transform: translateX(-50%);
+  }
+  .space_create_modal .space_create_modal_title {
+    font-size: 16px;
+  }
+  .space_create_modal .col-5-list-wrap li {
+    width: calc(33.333% - 20px / 3);
+    /* width: 27.600vw; */
+  }
+  .space_create_modal .col-5-list-wrap li i {
+    height: 27.800vw;
+    border-radius: 4px;
+  }
+  .space_create_modal.type_change_modal .renewal_pop_box .col-5-list-wrap li.on::after {
+    border-radius: 4px;
+  }
+  .space_create_modal.type_change_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap {
+    height: 27.600vw;
+  }
+  .space_create_modal.type_change_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap > span {
+    font-size: 13px;
+  }
+  .space_create_modal.type_change_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap {
+    background-color: #606060;
+    border-radius: 4px;
+  }
+  /* E ::: 타입 변경 모달 ::: E*/
+
+  /* S ::: 이미지 천장 모달 ::: S */
+  /* pop_wrap space_create_modal image_change_modal show */
+  .pop_wrap.space_create_modal.image_change_modal {
+    top: unset;
+    bottom: 80px;
+    transform: translateX(-50%);
+  }
+  .space_create_modal.image_change_modal .renewal_pop_box .col-5-list-wrap li.on::after {
+    border-radius: 4px;
+  }
+  .space_create_modal.image_change_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap {
+    height: 27.600vw;
+  }
+  .space_create_modal.image_change_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap > span {
+    font-size: 13px;
+  }
+  .space_create_modal.image_change_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap {
+    background-color: #606060;
+    border-radius: 4px;
+  }
+  /* E ::: 이미지 천장 모달 ::: E */
+  
+
+  /* S ::: 이미지 선택 모달 ::: S */
+  .space_create_modal.pop_wrap {
+    top: unset;
+    bottom: 90px;
+    transform: translateX(-50%);
+  }
+  .space_create_modal.interactive_image_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap {
+    background-color: #606060;
+    height: 27.800vw;
+  }
+  .space_create_modal.interactive_image_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap > span {
+    text-align: center;
+    font-size: 13px;
+  }
+  .space_create_modal.interactive_image_modal .renewal_pop_box .col-5-list-wrap.image_custom_wrap + .btn_wrap {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .space_create_modal.interactive_image_modal .renewal_pop_box .col-5-list-wrap.image_custom_wrap + .btn_wrap button {
+    font-size: 14px;
+    width: calc(33.333% - 20px / 3);
+    height: auto;
+    padding: 10px 0;
+  }
+  /* E ::: 이미지 선택 모달 ::: E */
+
+  /* S ::: 불러오기 모달 ::: S */
+  .load_modal .col-3-list-wrap {
+    gap: 10px;
+  }
+  .load_modal .col-3-list-wrap li{
+    width: calc(50% - 10px / 2);
+  }
+  .load_modal .col-3-list-wrap li i {
+    height: 31.733vw;
+  }
+  .load_modal .col-3-list-wrap li span {
+    font-size: 13px;
+    padding-top: 9px;
+  }
+  .load_modal .load_alert {
+    top: 0;
+    width: 310px;
+  }
+  .load_modal .load_alert p {
+    font-size: 15px;
+    margin-bottom: 9px;
+  }
+  /* E ::: 불러오기 모달 ::: E */
+
+  /* S ::: 영상선택 모달 ::: S */
+  .interactive_video_modal .video_preview_wrap {
+    height: 52vw;
+  }
+  .interactive_video_modal .video_search_wrap .search_icon {
+    left: 20px;
+  }
+  .interactive_video_modal .video_search_wrap input {
+    padding: 0 20px 0 53px;
+    font-size: 15px;
+    background-color: #898989;
+  }
+  .interactive_video_modal .video-col-4-list li span {
+    font-size: 13px;
+    padding-left: 0;
+  }
+  .interactive_video_modal .video-col-4-list li {
+    width: calc(50% - 10px / 2);
+  }
+  .interactive_video_modal .video-col-4-list li i {
+    height: 34vw;
+  }
+  /* E ::: 영상선택 모달 ::: E */
+
+  /* S ::: BGN선택 모달 ::: S */
+  .interactive_music_modal .tab_container .music_contents_wrap {
+    max-height: 150px;
+  }
+  .interactive_music_modal .tab_container .music_contents_wrap li {
+    padding: 16px;
+  }
+  .interactive_music_modal .tab_container .music_contents_wrap li.on {
+    background-color: rgba(49, 49, 49, 1)
+  }
+  .interactive_music_modal .tab_container .music_contents_wrap li .info_wrap > i {
+    width: 60px;
+    height: 60px;
+  }
+  .interactive_music_modal .tab_container .music_contents_wrap li .info_wrap .text_wrap > p {
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .interactive_music_modal .tab_container .music_contents_wrap li .info_wrap .text_wrap .music_info span:first-child {
+    padding-right: 8px;
+    margin-right: 8px;
+  }
+  .interactive_music_modal .tab_container .music_contents_wrap li .info_wrap .text_wrap .music_info span {
+    font-size: 14px;
+  }
+  .interactive_music_modal .music_complete_wrap .btn_wrap button {
+    font-size: 14px;
+  }
+  .interactive_music_modal .tab_btn_wrap {
+    gap: 10px;
+  }
+  .interactive_music_modal .tab_btn_wrap .tab_btn {
+    font-size: 14px;
+    width: calc(33.333% - 20px / 3);
+    height: 42px;
+  }
+  .interactive_music_modal .tab_container #recommend_tab .recommend_dropdown_wrap .dropdown_btn {
+    background-color: rgba(111, 111, 111, 1);
+    border: 0 none;
+    width: 98px;
+  }
+  .interactive_music_modal .tab_container #recommend_tab .recommend_dropdown_wrap .dropdown_btn.on {
+    background-color: rgba(111, 111, 111, 1);
+  }
+  .interactive_music_modal .tab_container #recommend_tab .recommend_dropdown_wrap .dropdown_btn > span {
+    font-size: 13px;
+  }
+  .interactive_music_modal .tab_container #recommend_tab .recommend_dropdown_wrap .dropdown_container li {
+    font-size: 13px;
+  }
+  .interactive_music_modal .tab_container #recommend_tab .recommend_dropdown_wrap .dropdown_container li:first-child {
+    margin-bottom: 16px;
+  }
+  .interactive_music_modal .tab_container #recommend_tab .recommend_dropdown_wrap .dropdown_container {
+    padding: 16px;
+    width: 98px;
+  }
+  .interactive_music_modal .music_complete_wrap .music_wrap {
+    background-color: rgba(33, 33, 33, 1);
+    width: auto;
+    padding: 16px;
+  }
+  .interactive_music_modal .music_complete_wrap i {
+    width: 18px;
+    height: 17px;
+  }
+  .interactive_music_modal .music_complete_wrap p {
+    font-size: 14px;
+  }
+  .interactive_music_modal .tab_container #search_tab .music_search_wrap input {
+    background-color: #898989;
+    padding: 0 20px 0 43px;
+    font-size: 13px;
+  }
+  .interactive_music_modal .tab_container #search_tab .music_search_wrap input::placeholder {
+    color: #dadada;
+  }
+  .interactive_music_modal .tab_container #search_tab .music_search_wrap .search_icon {
+    left: 16px;
+  }
+  #createDetailContainer > .music_wrap {
+    bottom: 86px;
+    left: 20px;
+    width: auto;
+    padding: 16px;
+    background-color: rgba(1, 1, 1, 0.4);
+    border-radius: 4px;
+  }
+  #createDetailContainer > .music_wrap i {
+    width: 18px;
+    height: 17px;
+  }
+  #createDetailContainer > .music_wrap p {
+    font-size: 14px;
+  }
+  /* E ::: BGN선택 모달 ::: E */
+  
+  /* S ::: 스티커 선택 ::: S */
+  .interactive_sticker_modal .btn_wrap .pc_btn{
+    display: none;
+  }
+  .interactive_sticker_modal .btn_wrap {
+    gap: 9px;
+    margin-bottom: 0;
+  }
+  .interactive_sticker_modal .btn_wrap button {
+    width: calc(33.333% - 18px / 3);
+    font-size: 14px;
+    height: 42px;
+  }
+  .interactive_sticker_modal .btn_wrap.mo_btn_wrap.on {
+    display: flex;
+  }
+  .interactive_sticker_modal .btn_wrap.mo_btn_wrap {
+    padding-top: 10px;
+  }
+  .interactive_sticker_modal .mo_viewmore_wrap {
+    display: flex;
+    margin: 16px 0;
+    justify-content: center;
+  }
+  .interactive_sticker_modal .mo_viewmore_wrap i {
+    transform: rotate(180deg);
+  }
+  .interactive_sticker_modal .mo_viewmore_wrap i.on {
+    transform: rotate(360deg);
+  }
+  .interactive_sticker_modal .sticker_list_wrapper {
+    padding: 8px;
+    background-color: #000000;
+    border-radius: 4px;
+  }
+  /* E ::: 스티커 선택 ::: E */
+
+  /* S ::: 링크 모달 ::: S */
+  .space_create_modal.interactive_link_modal.pop_wrap {
+    bottom: unset;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .interactive_link_modal .input_wrap input {
+    background-color: #494949;
+    padding: 0 15px;
+    font-size: 13px;
+  }
+  .interactive_link_modal .btn_wrap button {
+    width: 100%;
+    font-size: 14px;
+  }
+  /* E ::: 링크 모달 ::: E */
+
+  /* S ::: 임베드 선택 모달 ::: S */
+  .interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_select {
+    background-color: #494949;
+    padding: 0 16px;
+  }
+  .interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_select .info_wrap .text_wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_select .info_wrap .text_wrap p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_select .info_wrap .text_wrap span {
+    font-size: 12px;
+  }
+  .interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_list > p {
+    font-size: 16px;
+    padding-bottom: 15px;
+  }
+  .interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_list > ul > li .text_wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  .interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_list > ul > li .text_wrap p {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+  .interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_list > ul > li .text_wrap span {
+    font-size: 12px;
+  }
+  .interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_list > ul:first-of-type {
+    margin-bottom: 20px;
+  }
+  .interactive_embede_modal .embede_body_wrap .embede_search_wrap input {
+    background-color: #494949;
+    font-size: 13px;
+    padding: 0 16px;
+  }
+  .interactive_embede_modal .embede_body_wrap .embede_search_wrap input::placeholder {
+    color: #dadada;
+  }
+  .interactive_embede_modal .embede_dropdown_wrap .embede_dropdown_list {
+    max-height: 280px;
+  }
+  .interactive_embede_modal .embede_body_wrap .embede_thumb_wrap ul {
+    min-height: 0px;
+    margin-bottom: 15px;
+  }
+  .interactive_embede_modal .embede_body_wrap .embede_thumb_wrap > p {
+    word-break: keep-all;
+    color: #e0e0e0;
+    font-size: 12px;
+  }
+  .interactive_embede_modal .embede_body_wrap .embede_thumb_wrap > p br {
+    display: none;
+  }
+  .interactive_embede_modal .btn_wrap button {
+    width: 100%;
+    font-size: 14px;
+  }
+  /* E ::: 임베드 선택 모달 ::: E */
+
+  /* S ::: 전시 정보 입력 ::: S */
+  .interactive_exhibition_modal .exhibition_image_wrap p {
+    font-size: 13px;
+    margin: 8px 0;
+  }
+  .interactive_exhibition_modal .exhibition_image_wrap span {
+    font-size: 12px;
+  }
+  .interactive_exhibition_modal .exhibition_body_wrap .exhibition_text_input {
+    background-color: #494949;
+    font-size: 13px;
+    padding: 0 16px;
+  }
+  .interactive_exhibition_modal .exhibition_body_wrap .exhibition_text_input::placeholder {
+    color: #dadada;
+  }
+  .interactive_exhibition_modal .exhibition_body_wrap textarea {
+    background-color: #494949;
+    font-size: 13px;
+    padding: 16px;
+  }
+  .interactive_exhibition_modal .exhibition_body_wrap textarea::placeholder {
+    color: #dadada;
+  }
+  .interactive_exhibition_modal .exhibition_body_wrap .input_wrap.url label {
+    gap: 8px;
+    font-size: 13px;
+  }
+  .interactive_exhibition_modal .btn_wrap button {
+    width: 100%;
+    font-size: 14px;
+  }
+  .interactive_exhibition_modal .sub_image_alert {
+    width: 100%;
+    max-height: 55vh;
+    height: 100%;
+    background-color: #202020;
+  }
+  .interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap {
+    padding: 16px;
+    display: block;
+    overflow-y: scroll;
+  }
+  .interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap .image_wrap {
+    width: 100%;
+    gap: 10px;
+  }
+  .interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap .image_wrap li i {
+    height: 28vw;
+  }
+  .interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap .add_wrap {
+    width: 93px;
+    height: 93px;
+    margin-bottom: 16px;
+  }
+  /* E ::: 전시 정보 입력 ::: E */
+  
+  /* S ::: 공간연결 선택 ::: S */
+  .interactive_space_link_modal .space-link-col-5-list li {
+    height: 60.533vw;
+  }
+  .space_create_modal.interactive_space_link_modal .renewal_pop_box {
+    overflow: auto;
+  }
+  .interactive_space_link_modal .tab_btn_wrap .tab_btn {
+    font-size: 14px;
+    height: 42px;
+  }
+  .interactive_space_link_modal .btn_wrap button{
+    width: calc(50% - 8px);
+    font-size: 14px;
+  }
+  .interactive_space_link_modal #space_link_search .space_link_search_wrap input {
+    background-color: #494949;
+    font-size: 13px;
+    padding: 0 16px 0 46px;
+  }
+  .interactive_space_link_modal #space_link_search .space_link_search_wrap input::placeholder {
+    color: #dadada;
+  }
+  .interactive_space_link_modal #space_link_search .space_link_search_wrap .search_icon {
+    left: 20px;
+  }
+  .interactive_space_link_modal .space-link-col-5-list li p {
+    font-size: 14px;
+  }
+
+  .interactive_space_link_modal .space_link_filter_alert {
+    top: 0;
+  }
+  .interactive_space_link_modal .space_link_filter_alert .filter_list_wrap li {
+    font-size: 13px;
+  }
+  .interactive_space_link_modal .space_link_filter_alert .save {
+    height: 42px;
+  }
+  #myspace_alert {
+    bottom: unset;
+  }
+  #myspace_alert .renewal_pop_box {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+    padding: 16px;
+    max-height: none;
+  }
+  #myspace_alert .renewal_pop_box .pop_close {
+    right: 36px;
+  }
+  #myspace_alert .user_wrap {
+    margin-bottom: 15px;
+  }
+  #myspace_alert .btn_wrap button {
+    font-size: 14px;
+    width: 100%;
+  }
+  #myspace_alert .img_wrap img{
+    height: 125.333vw;
+    object-fit: cover;
+  }
+  /* E ::: 공간연결 선택 ::: E */
+  
+  /* S ::: 공간이동 모달 ::: S */
+  .space_create_modal.interactive_move_change_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap {
+    background-color: #606060;
+    height: 27.800vw;
+  }
+  .space_create_modal.interactive_move_change_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap > span {
+    font-size: 13px;
+  }
+  /* E ::: 공간이동 모달 ::: E */
+
+  /* S ::: TTS 모달 ::: S */
+  .interactive_tts_modal .sub_title {
+    font-size: 14px;
+    margin-bottom: 24px;
+  }
+  .interactive_tts_modal #tts_textarea {
+    font-size: 13px;
+  }
+  .interactive_tts_modal .textarea_wrap .count_wrap {
+    font-size: 13px;
+  }
+  .interactive_tts_modal .textarea_wrap .count_wrap span {
+    font-size: 13px;
+  }
+  .interactive_tts_modal .flex_wrap p {
+    font-size: 15px;
+  }
+  .interactive_tts_modal .flex_wrap [type="checkbox"] {
+    width: 50px;
+    height: 26px;
+  }
+  .interactive_tts_modal .flex_wrap [type="checkbox"]::before {
+    width: 26px ;
+    height: 26px;
+  }
+  .interactive_tts_modal .flex_wrap [type="checkbox"]:checked::before {
+    left: 23px;
+  }
+  .interactive_tts_modal .btn_wrap button {
+    width: 100%;
+    font-size: 14px;
+  }
+  /* E ::: TTS 모달 ::: E */
+
+  /* S ::: 텍스트 모달 ::: S */
+  .interactive_text_modal .interactive_text_input {
+    background-color: #212121;
+  }
+  .interactive_text_modal .interactive_text_contents_wrap {
+    background-color: #212121;
+  }
+  .interactive_text_modal .text_weight_wrap li {
+    height: 16.6vw;
+  }
+  .interactive_text_modal .btn_wrap button {
+    font-size: 14px;
+    width: 100%;
+    color: #fff;
+    background-color: #7e73eb;
+  }
+  /* E ::: 텍스트 모달 ::: E */
+
+  /* S ::: 공간 조명 모달 ::: S */
+  .objects_light_modal .objects_light_head_wrap .light_color_wrap > div {
+    background-color: #212121;
+  }
+  .objects_light_modal .objects_light_head_wrap .light_color_wrap .color_picker_wrap {
+    flex-direction: column;
+  }
+  .objects_light_modal .objects_light_head_wrap .thumb_wrap i {
+    width: 30vw;
+    height: 30vw;
+    font-size: 13px;
+  }
+  .objects_light_modal .threed_list_wrap p {
+    font-size: 16px;
+  }
+  .objects_light_modal .threed_list_wrap ul li {
+    width: calc(33.333% - 20px / 3);
+  }
+  .objects_light_modal .threed_list_wrap ul li i {
+    height: 20.600vw;
+  }
+  .objects_light_modal .btn_wrap button {
+    width: 100%;
+    font-size: 14px;
+  }
+  /* E ::: 공간 조명 모달 ::: E */
+
+  /* S ::: 벽면 조명 모달 ::: S */
+  .objects_wall_light_modal .objects_wall_light_head_wrap .light_color_wrap > div {
+    background-color: #212121;
+  }
+  .objects_wall_light_modal .objects_wall_light_head_wrap .light_color_wrap .color_picker_wrap {
+    flex-direction: column;
+  }
+  .objects_wall_light_modal .objects_wall_light_head_wrap .thumb_wrap i {
+    width: 30vw;
+    height: 30vw;
+    font-size: 13px;
+  }
+  .objects_wall_light_modal .threed_list_wrap p {
+    font-size: 16px;
+  }
+  .objects_wall_light_modal .threed_list_wrap ul li {
+    width: calc(33.333% - 20px / 3);
+  }
+  .objects_wall_light_modal .threed_list_wrap ul li i {
+    height: 20.600vw;
+  }
+  .objects_wall_light_modal .btn_wrap button {
+    width: 100%;
+    font-size: 14px;
+  }
+  /* E ::: 벽면 조명 모달 ::: E */
+
+  /* S ::: 3D 텍스트 모달 ::: S */
+  .objects_threed_text_modal .objects_text_input {
+    padding: 0 16px;
+    font-size: 13px;
+  }
+  .objects_threed_text_modal .objects_text_input::placeholder {
+    color: #a0a0a0;
+  }
+  .objects_threed_text_modal .size_range_wrap {
+    padding: 0 16px;
+  }
+  .objects_threed_text_modal .size_range_wrap .range_wrap .size_range_container {
+    width: 180px;
+  }
+  .objects_threed_text_modal .size_range_wrap > p {
+    font-size: 15px;
+  }
+  .objects_threed_text_modal .interactive_text_contents_wrap {
+    padding: 16px;
+  }
+  .objects_threed_text_modal .text_weight_wrap li {
+    height: 16.6vw;
+  }
+  .objects_threed_text_modal .btn_wrap button {
+    width: 100%;
+    font-size: 14px;
+  }
+  /* E ::: 3D 텍스트 모달 ::: E */
+
+  /* S ::: 3D 물체 ::: S */
+  .space_create_modal.objects_threed_thing_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap {
+    height: 27.800vw;
+  }
+
+  .space_create_modal.objects_threed_thing_modal .renewal_pop_box .col-5-list-wrap .load_image_wrap span {
+    font-size: 14px;
+  }
+  /* E ::: 3D 물체 ::: E */
+
+  /* S ::: dd ::: S */
+  /* E ::: dd ::: E */
+}
+

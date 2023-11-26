@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/spaceCreateDetailMo.css" />
     <link rel="stylesheet" href="../assets/css/jquery.mCustomScrollbar.css" />
     <script src="../assets/js/jquery-1.12.4.min.js"></script>
 
@@ -19,9 +20,18 @@
         <div class="icon_exit_wrap">
           <button type="button">다음</button>
           <i
+            class="pc_element"
             ><img
               src="../assets/images/renewal/renewal-create-detail-exit-icon.png"
               alt="hambuger icon"
+          /></i>
+        </div>
+
+        <div class="icon_exit_wrap mo_element">
+          <i
+            ><img
+            src="../assets/images/renewal/renewal-create-detail-exit-icon.png"
+            alt="hambuger icon"
           /></i>
         </div>
 
@@ -370,7 +380,7 @@
                     src="../assets/images/renewal/load-image-icon.png"
                     alt="load image icon"
                   />
-                  <span>이미지 불러오기</span>
+                  <span>이미지 <br class="mo_element" />불러오기</span>
                 </li>
               </ul>
             </div>
@@ -408,7 +418,7 @@
                     src="../assets/images/renewal/load-image-icon.png"
                     alt="load image icon"
                   />
-                  <span>이미지 불러오기</span>
+                  <span>이미지 <br class="mo_element" />불러오기</span>
                 </li>
               </ul>
             </div>
@@ -432,7 +442,7 @@
                     src="../assets/images/renewal/load-image-icon.png"
                     alt="load image icon"
                   />
-                  <span>이미지 불러오기</span>
+                  <span>이미지 <br class="mo_element" />불러오기</span>
                 </li>
               </ul>
               <div class="btn_wrap">
@@ -890,9 +900,21 @@
                 <button>효과&기타</button>
                 <button>텍스트</button>
                 <button>기호&도형</button>
+                <button class="pc_btn">블러</button>
+                <button class="pc_btn">입크</button>
+                <button class="pc_btn">여름</button>
+                <button class="pc_btn">겨울</button>
+                <button class="pc_btn">프레임</button>
+              </div>
+              <div class="btn_wrap mo_btn_wrap">
                 <button>블러</button>
                 <button>입크</button>
                 <button>여름</button>
+                <button>겨울</button>
+                <button>프레임</button>
+              </div>
+              <div class="mo_viewmore_wrap">
+                <i><img src="../assets/images/renewal/sticker-viewmore-arrow.png" alt="sticker viewmore arrow"></i>
               </div>
               <div class="sticker_list_wrapper">
                 <ul class="col-5-list-wrap">
@@ -1114,6 +1136,13 @@
               </div>
               <div class="sub_image_alert">
                 <div class="sub_image_alert_wrap">
+                  <div class="add_wrap">
+                    <i
+                      ><img
+                        src="../assets/images/renewal/exhibition-add-icon.png"
+                        alt="add icon"
+                    /></i>
+                  </div>
                   <ul class="image_wrap">
                     <li>
                       <i></i>
@@ -1143,13 +1172,7 @@
                       <i></i>
                     </li>
                   </ul>
-                  <div class="add_wrap">
-                    <i
-                      ><img
-                        src="../assets/images/renewal/exhibition-add-icon.png"
-                        alt="add icon"
-                    /></i>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -1386,7 +1409,7 @@
                     src="../assets/images/renewal/load-image-icon.png"
                     alt="load image icon"
                   />
-                  <span>이미지 불러오기</span>
+                  <span>이미지 <br class="mo_element" />불러오기</span>
                 </li>
               </ul>
               <ul class="col-5-list-wrap">
@@ -1519,7 +1542,7 @@
                     src="../assets/images/renewal/load-image-icon.png"
                     alt="load image icon"
                   />
-                  <span>이미지 불러오기</span>
+                  <span>이미지 <br class="mo_element" />불러오기</span>
                 </li>
               </ul>
             </div>
@@ -1539,7 +1562,7 @@
               <div class="space_create_modal_title">공간조명</div>
               <div class="objects_light_head_wrap">
                 <div class="thumb_wrap">
-                  <i> 2-1공간조명섬네일 </i>
+                  <i> 2-1<br class="mo_element"/>공간조명섬네일 </i>
                 </div>
                 <div class="light_color_wrap">
                   <div class="input_range_wrap">
@@ -1603,7 +1626,7 @@
               <div class="space_create_modal_title">벽면조명</div>
               <div class="objects_wall_light_head_wrap">
                 <div class="thumb_wrap">
-                  <i> 2-1벽면조명섬네일 </i>
+                  <i> 2-1<br class="mo_element"/>벽면조명섬네일 </i>
                 </div>
                 <div class="light_color_wrap">
                   <div class="input_range_wrap">
@@ -2093,6 +2116,13 @@
           ).removeClass("on");
           $(this).addClass("on");
         });
+
+        // mo
+        $(".interactive_sticker_modal .mo_viewmore_wrap i").on("click", function() {
+          $(this).toggleClass("on");
+          $(".interactive_sticker_modal .btn_wrap.mo_btn_wrap").toggleClass("on");
+          $(".interactive_sticker_modal .sticker_list_wrapper").toggleClass("on");
+        })
         // E:::: 인터랙티브 스티커 모달
 
         // S:::: 인터랙티브 링크 모달
