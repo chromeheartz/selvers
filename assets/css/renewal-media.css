@@ -210,7 +210,7 @@
   /* **** E: Header  **** */
 
   .renewal_hashtag_wrap {
-    overflow: scroll;
+    overflow-x: auto;
   }
 
   .renewal_hashtag_wrap > ul {
@@ -329,6 +329,7 @@
   }
   .renewal_long_card_slider_section .renewal_long_card_list_slick_slider .slick-slide {
     padding: 0 5px;
+    margin-top: 0 !important;
   }
 
   .renewal_card_section.pb100 {
@@ -550,6 +551,7 @@
   .renewal_long_card_slider_section .renewal_long_card_list_slick_slider .slick-dots li {
     width: 6px;
     height: 6px;
+    margin-top: 0 !important;
   }
   .renewal_long_card_slider_section .renewal_long_card_list_slick_slider .slick-dots li.slick-active {
     width: 16px;
@@ -1141,11 +1143,8 @@
 
 
 /* ******************************************* 공간 정보 바꾸기 ******************************************* */
-@media all and (max-width: 640px) {
+@media all and (max-width: 1024px) {
   .pop_space_change .renewal_pop_box {
-    width: 100%;
-    height: 100vh;
-    border-radius: 0;
     max-height: unset;
     overflow-y: auto;
   }
@@ -1157,6 +1156,22 @@
   .pop_space_change .iframe_wrap {
     width: 100%;
     min-height: unset;
+    height: 29vw;
+  }
+
+  .pop_space_change .pop_change .pop_change_post_wrap .btn_wrap {
+    margin-top: 20px;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .pop_space_change .renewal_pop_box {
+    width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .pop_space_change .iframe_wrap {
     height: 109.375vw;
   }
 
@@ -1383,5 +1398,48 @@
 
   .renewal_card_wrapper .renewal_card_list li > i {
     height: 63.938vw;
+  }
+}
+
+
+
+
+/* ************************** 이미지 비율 ************************** */
+@media all and (max-width: 1336px) {
+  .renewal_card_wrapper .renewal_card_list li > i {
+    height: 26.946vw;
+  }
+  .renewal_long_card_slider_section .renewal_long_card_list_slick_slider .slick-slide i {
+    height: 18.713vw;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .renewal_card_wrapper .renewal_card_list li > i {
+    height: 33vw;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .renewal_long_card_slider_section .renewal_long_card_list_slick_slider .slick-slide i {
+    height: 27vw;
+  }
+}
+
+@media all and (max-width: 768px) {
+  .renewal_card_wrapper .renewal_card_list li > i {
+    height: 44vw;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .renewal_long_card_slider_section .renewal_long_card_list_slick_slider .slick-slide i {
+    height: 54vw;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .renewal_card_wrapper .renewal_card_list li > i {
+    height: 64vw;
   }
 }
