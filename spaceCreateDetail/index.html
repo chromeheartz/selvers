@@ -19,8 +19,7 @@
         <!-- S: MENU -->
         <div class="icon_exit_wrap">
           <button type="button">다음</button>
-          <i
-            class="pc_element"
+          <i class="pc_element"
             ><img
               src="../assets/images/renewal/renewal-create-detail-exit-icon.png"
               alt="hambuger icon"
@@ -30,8 +29,8 @@
         <div class="icon_exit_wrap mo_element">
           <i
             ><img
-            src="../assets/images/renewal/renewal-create-detail-exit-icon.png"
-            alt="hambuger icon"
+              src="../assets/images/renewal/renewal-create-detail-exit-icon.png"
+              alt="hambuger icon"
           /></i>
         </div>
 
@@ -126,19 +125,19 @@
                             <i></i>
                             <span>천장</span>
                           </li>
-                          <li>
+                          <li id="wall_change_modal_call">
                             <i></i>
                             <span>벽면</span>
                           </li>
-                          <li>
+                          <li id="floor_change_modal_call">
                             <i></i>
                             <span>바닥</span>
                           </li>
-                          <li>
+                          <li id="bg_change_modal_call">
                             <i></i>
                             <span>배경</span>
                           </li>
-                          <li>
+                          <li id="bg_event_change_modal_call">
                             <i></i>
                             <span>배경 이벤트</span>
                           </li>
@@ -353,7 +352,7 @@
     </div>
 
     <!-- ***************** S: 천장 모달 ***************** -->
-    <div class="pop_wrap space_create_modal image_change_modal">
+    <div class="pop_wrap space_create_modal image_change_modal image_modal">
       <div class="renewal_pop_box">
         <div class="pop_body">
           <div class="pop_body_in">
@@ -389,6 +388,164 @@
       </div>
     </div>
     <!-- ***************** E: 천장 모달 ***************** -->
+
+    <!-- ***************** S: 벽면 모달 ***************** -->
+    <div
+      class="pop_wrap space_create_modal image_change_modal wall_change_modal"
+    >
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">벽면</div>
+              <ul class="col-5-list-wrap">
+                <li class="on"><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li class="load_image_wrap">
+                  <img
+                    src="../assets/images/renewal/load-image-icon.png"
+                    alt="load image icon"
+                  />
+                  <span>이미지 <br class="mo_element" />불러오기</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 벽면 모달 ***************** -->
+
+    <!-- ***************** S: 바닥 모달 ***************** -->
+    <div
+      class="pop_wrap space_create_modal image_change_modal floor_change_modal"
+    >
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">바닥</div>
+              <ul class="col-5-list-wrap">
+                <li class="on"><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li class="load_image_wrap">
+                  <img
+                    src="../assets/images/renewal/load-image-icon.png"
+                    alt="load image icon"
+                  />
+                  <span>이미지 <br class="mo_element" />불러오기</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 바닥 모달 ***************** -->
+
+    <!-- ***************** S: 배경 모달 ***************** -->
+    <div class="pop_wrap space_create_modal image_change_modal bg_change_modal">
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">배경</div>
+              <ul class="col-5-list-wrap">
+                <li class="on"><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li class="load_image_wrap">
+                  <img
+                    src="../assets/images/renewal/load-image-icon.png"
+                    alt="load image icon"
+                  />
+                  <span>이미지 <br class="mo_element" />불러오기</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 배경 모달 ***************** -->
+
+    <!-- ***************** S: 배경 이벤트 모달 ***************** -->
+    <div
+      class="pop_wrap space_create_modal image_change_modal bg_event_change_modal"
+    >
+      <div class="renewal_pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <button type="button" class="pop_close">닫기</button>
+              <div class="space_create_modal_title">배경 이벤트</div>
+              <ul class="col-5-list-wrap">
+                <li class="on"><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li><i></i></li>
+                <li class="load_image_wrap">
+                  <img
+                    src="../assets/images/renewal/load-image-icon.png"
+                    alt="load image icon"
+                  />
+                  <span>이미지 <br class="mo_element" />불러오기</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ***************** E: 배경 이벤트 모달 ***************** -->
 
     <!-- ***************** S: 타입변경 모달 ***************** -->
     <div class="pop_wrap space_create_modal type_change_modal">
@@ -914,7 +1071,11 @@
                 <button>프레임</button>
               </div>
               <div class="mo_viewmore_wrap">
-                <i><img src="../assets/images/renewal/sticker-viewmore-arrow.png" alt="sticker viewmore arrow"></i>
+                <i
+                  ><img
+                    src="../assets/images/renewal/sticker-viewmore-arrow.png"
+                    alt="sticker viewmore arrow"
+                /></i>
               </div>
               <div class="sticker_list_wrapper">
                 <ul class="col-5-list-wrap">
@@ -1172,7 +1333,6 @@
                       <i></i>
                     </li>
                   </ul>
-                  
                 </div>
               </div>
             </div>
@@ -1562,7 +1722,7 @@
               <div class="space_create_modal_title">공간조명</div>
               <div class="objects_light_head_wrap">
                 <div class="thumb_wrap">
-                  <i> 2-1<br class="mo_element"/>공간조명섬네일 </i>
+                  <i> 2-1<br class="mo_element" />공간조명섬네일 </i>
                 </div>
                 <div class="light_color_wrap">
                   <div class="input_range_wrap">
@@ -1626,7 +1786,7 @@
               <div class="space_create_modal_title">벽면조명</div>
               <div class="objects_wall_light_head_wrap">
                 <div class="thumb_wrap">
-                  <i> 2-1<br class="mo_element"/>벽면조명섬네일 </i>
+                  <i> 2-1<br class="mo_element" />벽면조명섬네일 </i>
                 </div>
                 <div class="light_color_wrap">
                   <div class="input_range_wrap">
@@ -1888,11 +2048,11 @@
         // S:::: 천장 모달
         $("#image_change_modal_call").on("click", function () {
           $(".space_create_modal").removeClass("show");
-          $(".image_change_modal").addClass("show");
+          $(".image_modal").addClass("show");
           $("body").addClass("scroll_stop");
         });
 
-        $(".image_change_modal.space_create_modal .pop_close").on(
+        $(".image_modal.space_create_modal .pop_close").on(
           "click",
           function () {
             $(".space_create_modal").removeClass("show");
@@ -1900,16 +2060,112 @@
           }
         );
 
-        $(".image_change_modal .renewal_pop_box .col-5-list-wrap li").on(
+        $(".image_modal .renewal_pop_box .col-5-list-wrap li").on(
           "click",
           function () {
-            $(
-              ".image_change_modal .renewal_pop_box .col-5-list-wrap li"
-            ).removeClass("on");
+            $(".image_modal .renewal_pop_box .col-5-list-wrap li").removeClass(
+              "on"
+            );
             $(this).addClass("on");
           }
         );
         // E:::: 천장 모달
+
+        // S:::: 벽면 모달
+        $("#wall_change_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".image_change_modal.wall_change_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(
+          ".image_change_modal.wall_change_modal.space_create_modal .pop_close"
+        ).on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        $(
+          ".image_change_modal.wall_change_modal .renewal_pop_box .col-5-list-wrap li"
+        ).on("click", function () {
+          $(
+            ".image_change_modal.wall_change_modal .renewal_pop_box .col-5-list-wrap li"
+          ).removeClass("on");
+          $(this).addClass("on");
+        });
+        // E:::: 벽면 모달
+
+        // S:::: 바닥 모달
+        $("#floor_change_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".image_change_modal.floor_change_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(
+          ".image_change_modal.floor_change_modal.space_create_modal .pop_close"
+        ).on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        $(
+          ".image_change_modal.floor_change_modal .renewal_pop_box .col-5-list-wrap li"
+        ).on("click", function () {
+          $(
+            ".image_change_modal.floor_change_modal .renewal_pop_box .col-5-list-wrap li"
+          ).removeClass("on");
+          $(this).addClass("on");
+        });
+        // E:::: 바닥 모달
+
+        // S:::: 배경 모달
+        $("#bg_change_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".image_change_modal.bg_change_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(
+          ".image_change_modal.bg_change_modal.space_create_modal .pop_close"
+        ).on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        $(
+          ".image_change_modal.bg_change_modal .renewal_pop_box .col-5-list-wrap li"
+        ).on("click", function () {
+          $(
+            ".image_change_modal.bg_change_modal .renewal_pop_box .col-5-list-wrap li"
+          ).removeClass("on");
+          $(this).addClass("on");
+        });
+        // E:::: 배경 모달
+
+        // S:::: 배경 모달
+        $("#bg_event_change_modal_call").on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $(".image_change_modal.bg_event_change_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        });
+
+        $(
+          ".image_change_modal.bg_event_change_modal.space_create_modal .pop_close"
+        ).on("click", function () {
+          $(".space_create_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        $(
+          ".image_change_modal.bg_event_change_modal .renewal_pop_box .col-5-list-wrap li"
+        ).on("click", function () {
+          $(
+            ".image_change_modal.bg_event_change_modal .renewal_pop_box .col-5-list-wrap li"
+          ).removeClass("on");
+          $(this).addClass("on");
+        });
+        // E:::: 배경 모달
 
         // S:::: 타입변경 모달
         $("#type_change_modal_call").on("click", function () {
@@ -2118,11 +2374,18 @@
         });
 
         // mo
-        $(".interactive_sticker_modal .mo_viewmore_wrap i").on("click", function() {
-          $(this).toggleClass("on");
-          $(".interactive_sticker_modal .btn_wrap.mo_btn_wrap").toggleClass("on");
-          $(".interactive_sticker_modal .sticker_list_wrapper").toggleClass("on");
-        })
+        $(".interactive_sticker_modal .mo_viewmore_wrap i").on(
+          "click",
+          function () {
+            $(this).toggleClass("on");
+            $(".interactive_sticker_modal .btn_wrap.mo_btn_wrap").toggleClass(
+              "on"
+            );
+            $(".interactive_sticker_modal .sticker_list_wrapper").toggleClass(
+              "on"
+            );
+          }
+        );
         // E:::: 인터랙티브 스티커 모달
 
         // S:::: 인터랙티브 링크 모달
