@@ -461,8 +461,8 @@
   }
   /* E: Common */
 
-  .banner_slider {
-    height: 550px;
+  .banner_slider, .renewal_main_banner_slider {
+    height: 500px;
   }
   .banner_slider .swiper-pagination {
     bottom: 25px;
