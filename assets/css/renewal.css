@@ -5025,9 +5025,16 @@
   border-radius: 4px;
 }
 
-.interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap .add_wrap {
-  width: 100px;
-  height: 100px;
+.interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap .thumb_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap .thumb_wrapper .add_wrap,
+.interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap .thumb_wrapper .thumb_wrap {
+  width: 80px;
+  height: 80px;
   border-radius: 4px;
   border: 1px solid #909090;
   display: flex;
@@ -5035,6 +5042,7 @@
   justify-content: center;
   cursor: pointer;
 }
+
 
 /* ============= E:: 전시 모달 ============= */
 

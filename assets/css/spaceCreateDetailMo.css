@@ -265,12 +265,12 @@
     font-size: 14px;
   }
   #createDetailContainer > .menu_title_wrap {
-    top: 78px;
     width: calc(100% - 40px);
   }
   #createDetailContainer > .menu_title_wrap .menu_title {
+    margin: 0 auto 12px;
+    width: calc(100% - 37.500vw);
     background-color: rgba(51, 51, 51, 0.7);
-    width: 100%;
   }
   #createDetailContainer > .menu_title_wrap .menu_title p {
     font-size: 16px;
@@ -333,8 +333,20 @@
     padding: 16px;
   }
 
+  #createDetailContainer > .menu_title_wrap .menu_title > i > img {
+    width: 16px;
+    height: 16px;
+  }
+  #createDetailContainer > .menu_title_wrap .menu_title p {
+    font-size: 14px;
+  }
+  #createDetailContainer > .menu_title_wrap .menu_title {
+    width: calc(100% - 46.5vw);
+    gap: 4px;
+  }
+
   #createDetailContainer .cube_adjust_wrap .cube_adjust_list > li .dep1 > span {
-    font-size: 16px;
+    font-size: 15px;
   }
   #createDetailContainer
     .cube_adjust_wrap
@@ -1044,13 +1056,21 @@
     i {
     height: 28vw;
   }
-  .interactive_exhibition_modal
-    .sub_image_alert
-    .sub_image_alert_wrap
-    .add_wrap {
-    width: 93px;
-    height: 93px;
-    margin-bottom: 16px;
+
+  .interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap .thumb_wrapper {
+    margin-bottom: 3.200vw;
+    flex-direction: row;
+    gap: 1.400vw;
+    justify-content: flex-start;
+  }
+  .interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap .thumb_wrapper .add_wrap {
+    width: calc(25% - 1.400vw / 4);
+    height: 20.800vw;
+  }
+
+  .interactive_exhibition_modal .sub_image_alert .sub_image_alert_wrap .thumb_wrapper .thumb_wrap {
+    width: calc(25% - 1.400vw / 4);
+    height: 20.800vw;
   }
   /* E ::: 전시 정보 입력 ::: E */
 
