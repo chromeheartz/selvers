@@ -640,24 +640,9 @@
                         코드영역 입니다 코드영역 입니다 코드영역 입니다 코드영역
                         입니다 코드영역 입니다 코드영역 입니다
                       </div>
+                      <button class="copy_btn" id="source_code_copy_btn">복사</button>
                     </div>
-                    <div class="original_download_wrap">
-                      <p>원본 다운로드</p>
-                      <div class="btn_wrap">
-                        <button class="blog">
-                          <i></i>
-                          <span>블로그</span>
-                        </button>
-                        <button class="youtube">
-                          <i></i>
-                          <span>유튜브</span>
-                        </button>
-                        <button class="instagram">
-                          <i></i>
-                          <span>인스타그램</span>
-                        </button>
-                      </div>
-                    </div>
+                    
                   </div>
                   <!-- 링크 복사 -->
                   <div class="tab_cont_box">
@@ -666,10 +651,236 @@
                         코드영역 입니다 코드영역 입니다 코드영역 입니다 코드영역
                         입니다 코드영역 입니다 코드영역 입니다
                       </div>
+                      <button class="copy_btn" id="link_code_copy_btn">복사</button>
+                    </div>
+                  </div>
+                  <div class="original_download_wrap">
+                    <p>원본 다운로드</p>
+                    <div class="btn_wrap">
+                      <button class="blog" id="blog_download_modal_call">
+                        <i></i>
+                        <span>블로그</span>
+                      </button>
+                      <button class="youtube" id="youtube_download_modal_call">
+                        <i></i>
+                        <span>유튜브</span>
+                      </button>
+                      <button class="instagram" id="instagram_download_modal_call">
+                        <i></i>
+                        <span>인스타그램</span>
+                      </button>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- download blog -->
+    <div class="pop_wrap pop_blog_download_modal pop_download_modal">
+      <div class="dim"></div>
+      <div class="pop_box">
+        <button type="button" class="pop_close">닫기</button>
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <div class="title_wrap">
+                <h6>원본 다운로드 되었습니다!</h6>
+                <p>블로그에 3차원 공간을 적용하세요</p>
+              </div>
+              <div class="content_wrap">
+                <img src="../assets/images/renewal/blog_download_img.png" alt="download img" />
+              </div>
+              <button class="pop_download_modal_btn">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- download youtube -->
+    <div class="pop_wrap pop_youtube_download_modal pop_download_modal">
+      <div class="dim"></div>
+      <div class="pop_box">
+        <button type="button" class="pop_close">닫기</button>
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <div class="title_wrap">
+                <h6>원본 다운로드 되었습니다!</h6>
+                <p>유튜브에 3차원 공간을 적용하세요</p>
+              </div>
+              <div class="content_wrap">
+                <img src="../assets/images/renewal/youtube_download_img.png" alt="download img" />
+              </div>
+              <button class="pop_download_modal_btn">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- download instagram -->
+    <div class="pop_wrap pop_instagram_download_modal pop_download_modal">
+      <div class="dim"></div>
+      <div class="pop_box">
+        <button type="button" class="pop_close">닫기</button>
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <div class="title_wrap">
+                <h6>원본 다운로드 되었습니다!</h6>
+                <p>인스타그램에 3차원 공간을 적용하세요</p>
+              </div>
+              <div class="content_wrap">
+                <img src="../assets/images/renewal/instagram_download_img.png" alt="download img" />
+              </div>
+              <button class="pop_download_modal_btn">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- source code copy -->
+    <div class="pop_wrap pop_source_code_copy_modal">
+      <div class="dim"></div>
+      <div class="pop_box">
+        <button type="button" class="pop_close">닫기</button>
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <div class="title_wrap">
+                <h6>소스코드 복사 되었습니다!</h6>
+                <p>사이트나 커머스에 3차원 공간을 적용하세요</p>
+              </div>
+              <ul class="source_code_copy_tab">
+                <li>
+                  <button type="button" class="tab_btn wix_tab on">
+                    <img src="../assets/images/renewal/wix_logo.png" alt="wix logo">
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="tab_btn cafe_tab">
+                    <img src="../assets/images/renewal/cafe_logo.png" alt="cafe24 logo">
+                  </button>
+                </li>
+                <li>
+                  <button type="button" class="tab_btn naver_tab">
+                    <img src="../assets/images/renewal/naver_logo.png" alt="naver smart">
+                  </button>
+                </li>
+              </ul>
+              <div class="tab_cont">
+                <div class="tab_cont_box on">
+                  <!-- wix -->
+                  <div class="wix_wrap">
+                    <div class="img_wrap">
+                      <img src="../assets/images/renewal/wix_img.png" alt="wix img">
+                    </div>
+                    <div class="download_step_wrap">
+                      <p>적용 경로</p>
+                      <ul>
+                        <li>사이트 편집</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>사이트 추가 패널</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>코드 삽입 (HTML 혹은 URL)</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>게시</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- cafe24 -->
+                <div class="tab_cont_box">
+                  <div>
+                    <p class="step_msg">1. 메인페이지</p>
+                    <div class="img_wrap">
+                      <img src="../assets/images/renewal/cafe_img01.png" alt="cafe24 img">
+                    </div>
+                    <div class="download_step_wrap ph-18 mb-30">
+                      <p>적용 경로</p>
+                      <ul class="m-470">
+                        <li>디자인(PC/모바일)</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>디자인 대시보드</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>동영상 or 커스텀 HTML</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>코드 삽입 (HTML 혹은 URL)</li>
+                      </ul>
+                    </div>
+                    <p class="step_msg">2. 상세 페이지</p>
+                    <div class="img_wrap">
+                      <img src="../assets/images/renewal/cafe_img02.png" alt="cafe24 img">
+                    </div>
+                    <div class="download_step_wrap ph-18">
+                      <p>적용 경로</p>
+                      <ul class="m-440">
+                        <li>상품 대시보드</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>상품등록</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>에디봇 작성</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>코드 삽입 (HTML)</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>서식 지우기</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>저장 or 등록</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- 스마트스토어 -->
+                <div class="tab_cont_box">
+                  <div>
+                    <div class="img_wrap">
+                      <img src="../assets/images/renewal/naver_img.png" alt="naver img">
+                    </div>
+                    <div class="download_step_wrap">
+                      <p>삽입 경로</p>
+                      <ul>
+                        <li>상품관리</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>상품등록</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>상세설명</li>
+                        <i><img src="../assets/images/renewal/p-step-icon.png" alt="step icon"></i>
+                        <li>코드 삽입 (HTML)</li>
+                        <p>* 현재, 네이버 스마트 스토어는 스마트에디터 ONE에서 적용 불가하며 HTML 작성만가능합니다. </p>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="pop_download_modal_btn">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- source code copy -->
+    <div class="pop_wrap pop_link_code_copy_modal">
+      <div class="dim"></div>
+      <div class="pop_box">
+        <button type="button" class="pop_close">닫기</button>
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <div class="title_wrap">
+                <h6>URL 복사 되었습니다!</h6>
+                <p>다양한 SNS에 3차원 공간을 공유하세요</p>
+              </div>
+              <div class="img_wrap">
+                <img src="../assets/images/renewal/link_code_img.png" alt="download img" />
+              </div>
+              <button class="pop_link_code_modal_btn">확인</button>
             </div>
           </div>
         </div>
@@ -687,6 +898,73 @@
               <div class="btn_wrap">
                 <button class="cancel">취소</button>
                 <button class="check">확인</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- report modal -->
+    <div class="pop_wrap pop_report_modal">
+      <div class="dim"></div>
+      <div class="pop_box">
+        <button type="button" class="pop_close">닫기</button>
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <h6>신고</h6>
+              <div class="report_msg_wrap">
+                <i><img src="../assets/images/renewal/report_icon.png" alt="report icon"></i>
+                <div class="text_wrap">
+                  <span>신고 사유가 무엇인가요?</span>
+                  <p>커뮤니티의 안전성을 위해 회원님의 신고는 익명으로 처리됩니다. 누군가 위급한 상황에 처했다면 <br />
+                  기다리지 말고 지역 내 관련 기관이나 응급 구조 서비스에 연락 하시기 바랍니다.</p>
+                </div>
+              </div>
+              <ul class="report_reason_list">
+                <li class="on">음란성</li>
+                <li>폭력성</li>
+                <li>사회문제</li>
+                <li>저작권 및 <br />지적재산 침해</li>
+                <li>판매 금지 물품</li>
+                <li>사칭 문제</li>
+                <li>14세 미만 가입</li>
+                <li>기타</li>
+              </ul>
+              <button class="pop_link_code_modal_btn">확인</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pop_wrap pop_report_confirm_modal">
+      <div class="dim"></div>
+      <div class="pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <p>해당 게시물을 신고하시겠습니까?</p>
+              <div class="btn_wrap">
+                <button class="report_check">확인</button>
+                <button class="report_cancel">취소</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pop_wrap pop_report_msg_modal">
+      <div class="dim"></div>
+      <div class="pop_box">
+        <div class="pop_body">
+          <div class="pop_body_in">
+            <div class="pop_cont">
+              <p>신고가 접수되었습니다.</p>
+              <div class="btn_wrap">
+                <button class="report_msg_check">확인</button>
               </div>
             </div>
           </div>
@@ -807,6 +1085,126 @@
         ).on("click", function () {
           if (true) commentPostToastPop();
         });
+
+
+        $(".pop_download_modal_btn").on("click", function () {
+          $(".pop_download_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        })
+
+        // blog_download_modal_call
+        $("#blog_download_modal_call").on("click", function () {
+          $(".pop_blog_download_modal").addClass("show");
+          $(".pop_share_code_link").removeClass("show");
+          $("body").addClass("scroll_stop");
+        });
+        $(".pop_blog_download_modal .pop_close").on("click", function () {
+          $(".pop_blog_download_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        // youtube_download_modal_call
+        $("#youtube_download_modal_call").on("click", function () {
+          $(".pop_youtube_download_modal").addClass("show");
+          $(".pop_share_code_link").removeClass("show");
+          $("body").addClass("scroll_stop");
+        });
+        $(".pop_youtube_download_modal .pop_close").on("click", function () {
+          $(".pop_youtube_download_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        // instagram_download_modal_call
+        $("#instagram_download_modal_call").on("click", function () {
+          $(".pop_instagram_download_modal").addClass("show");
+          $(".pop_share_code_link").removeClass("show");
+          $("body").addClass("scroll_stop");
+        });
+        $(".pop_instagram_download_modal .pop_close").on("click", function () {
+          $(".pop_instagram_download_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        $(".pop_instagram_download_modal .pop_close").on("click", function () {
+          $(".pop_instagram_download_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+        
+        $("#source_code_copy_btn").on("click", function() {
+          $(".pop_source_code_copy_modal").addClass("show");
+          $(".pop_share_code_link").removeClass("show");
+          $("body").addClass("scroll_stop");
+        })
+
+        $(".pop_source_code_copy_modal .pop_close").on("click", function () {
+          $(".pop_source_code_copy_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        $(".pop_source_code_copy_modal .pop_download_modal_btn").on("click", function () {
+          $(".pop_source_code_copy_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        $(".pop_source_code_copy_modal .source_code_copy_tab .tab_btn").on("click", function () {
+          let idx = $(this).parents("li").index();
+          $(".pop_source_code_copy_modal .source_code_copy_tab .tab_btn").removeClass("on");
+          $(this).addClass("on");
+          $(".pop_source_code_copy_modal .tab_cont_box")
+            .eq(idx)
+            .addClass("on")
+            .siblings()
+            .removeClass("on");
+        });
+
+        $("#link_code_copy_btn").on("click", function() {
+          $(".pop_link_code_copy_modal").addClass("show");
+          $(".pop_share_code_link").removeClass("show");
+          $("body").addClass("scroll_stop");
+        })
+
+        $(".pop_link_code_copy_modal .pop_close").on("click", function () {
+          $(".pop_link_code_copy_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+        $(".pop_link_code_copy_modal .pop_link_code_modal_btn").on("click", function () {
+          $(".pop_link_code_copy_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        $(".report").on("click", function() {
+          $(".pop_report_modal").addClass("show");
+          $("body").addClass("scroll_stop");
+        })
+
+        $(".pop_report_modal .report_reason_list li").on("click", function() {
+          $(".pop_report_modal .report_reason_list li").removeClass("on");
+          $(this).addClass("on");
+        })
+
+        $(".pop_report_modal .pop_close").on("click", function () {
+          $(".pop_report_modal").removeClass("show");
+          $("body").removeClass("scroll_stop");
+        });
+
+        $(".pop_report_modal .pop_link_code_modal_btn").on("click", function() {
+          $(".pop_report_modal").removeClass("show");
+          $(".pop_report_confirm_modal").addClass("show");
+        })
+
+        $(".pop_report_confirm_modal .report_cancel").on("click", function() {
+          $(".pop_report_confirm_modal").removeClass("show");
+        })
+
+        $(".pop_report_confirm_modal .report_check").on("click", function() {
+          $(".pop_report_confirm_modal").removeClass("show");
+          $(".pop_report_msg_modal").addClass("show");
+        })
+
+        $(".pop_report_msg_modal .report_msg_check").on("click", function() {
+          $(".pop_report_msg_modal").removeClass("show");
+        })
+        
       });
     </script>
 
