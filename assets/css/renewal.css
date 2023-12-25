@@ -2032,6 +2032,10 @@
   margin-bottom: 20px;
 }
 
+.pop_link_code_copy_modal .img_wrap .mo_img {
+  display: none;
+}
+
 
 .pop_link_code_copy_modal .pop_link_code_modal_btn {
   width: 100px;
